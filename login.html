@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — HisabAI</title>
+<link rel="stylesheet" href="hisabai.css">
+
+</head>
+<body>
+<section class="loginScreen" id="loginScreen" aria-labelledby="loginTitle">
+ <div class="loginShell">
+  <div class="loginPanel">
+   <div class="loginCard">
+    <div class="loginFormVisual" aria-hidden="true">
+     <span class="loginFormVisualOrbit"></span>
+     <svg viewBox="0 0 48 48">
+      <path class="loginFormShield" d="M24 5 38 11v10c0 9.2-5.7 16.6-14 21-8.3-4.4-14-11.8-14-21V11L24 5Z"></path>
+      <path class="loginFormCheck" d="m17.5 23.5 4.3 4.2 9-9.2"></path>
+     </svg>
+     <i class="loginFormSpark loginFormSparkOne"></i>
+     <i class="loginFormSpark loginFormSparkTwo"></i>
+    </div>
+    <div class="loginHeading">
+     <h2 id="loginTitle">Welcome back!</h2>
+    </div>
+    <form class="loginForm" id="loginForm">
+     <div class="field">
+      <label for="loginEmail">Email or phone number</label>
+      <input id="loginEmail" name="email" type="text" autocomplete="username" placeholder="Email or phone number" required>
+     </div>
+     <div class="field">
+      <label for="loginPassword">Security PIN</label>
+      <div class="loginPasswordField">
+       <input id="loginPassword" name="pin" type="password" inputmode="numeric" autocomplete="off" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="4-digit PIN" title="Enter a 4-digit PIN" required>
+       <button class="passwordToggle" id="passwordToggle" type="button" aria-label="Show PIN" aria-pressed="false">Show</button>
+      </div>
+     </div>
+     <div class="loginOptions">
+      <label class="rememberOption"><input id="rememberLogin" type="checkbox"><span>Remember me</span></label>
+      <a class="loginLink" href="forgot-password.html">Forgot PIN?</a>
+     </div>
+     <p class="loginFeedback" id="loginFeedback" role="status" aria-live="polite"></p>
+     <button class="loginSubmit" type="submit">Log in securely</button>
+    </form>
+    <p class="loginTrust">TEE (Trusted Execution Environment)</p>
+    <a class="createAccount" id="createAccount" href="register.html">Create an account</a>
+   </div>
+  </div>
+  <div class="loginIntro">
+   <div class="loginBackgroundShade" aria-hidden="true"></div>
+   <div class="loginGridSweep" aria-hidden="true"></div>
+   <svg class="loginFinanceGraph" viewBox="0 0 520 260" preserveAspectRatio="none" aria-hidden="true">
+    <path class="loginGraphBaseline" d="M12 222H508M12 172H508M12 122H508M12 72H508"></path>
+    <path class="loginGraphArea" d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34L504 230 16 230Z"></path>
+    <path class="loginGraphLine" d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34"></path>
+    <circle cx="150" cy="158" r="4"></circle><circle cx="278" cy="117" r="4"></circle><circle cx="400" cy="83" r="4"></circle><circle cx="504" cy="34" r="4"></circle>
+   </svg>
+   <div class="loginBrandRow">
+    <div class="loginBrand">
+     <span class="logoMark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 13v22M35 13v12M13 24h13" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><path d="m24 31 5-6 4 3 6-9m-6 0h6v6" fill="none" stroke="#69f0e0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+     <span><strong>HisabAI</strong><small>Your voice. Your business.</small></span>
+    </div>
+    <span class="loginPrivacyBadge">
+     <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5 16 5v4.2c0 3.7-2.5 6.4-6 8.3-3.5-1.9-6-4.6-6-8.3V5l6-2.5Z"/><path d="m7.5 9.8 1.7 1.7 3.5-3.7"/></svg>
+     Private by design
+    </span>
+   </div>
+   <div class="loginPitch">
+    <h1>Make every rupee count.</h1>
+    <p>Track sales, expenses, and customer credit — all in one simple place.</p>
+   </div>
+   <div class="loginShowcase" aria-hidden="true">
+    <div class="loginShowcaseCard">
+     <div class="loginShowcaseTop">
+      <span class="loginShowcaseTitle"><i></i> BUSINESS OVERVIEW</span>
+      <span class="loginShowcasePeriod">SAMPLE · THIS MONTH</span>
+     </div>
+     <div class="loginShowcaseBody">
+      <div class="loginShowcaseMetric">
+       <span>Total sales</span>
+       <strong>₹1,24,800</strong>
+       <small><b>↗ 12.8%</b> from last month</small>
+      </div>
+      <svg class="loginShowcaseChart" viewBox="0 0 260 92" preserveAspectRatio="none">
+       <defs>
+        <linearGradient id="loginChartFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#81d4a0" stop-opacity=".28"/><stop offset="1" stop-color="#81d4a0" stop-opacity="0"/></linearGradient>
+       </defs>
+       <path class="loginShowcaseGrid" d="M0 20H260M0 48H260M0 76H260"></path>
+       <g class="loginShowcaseBars">
+        <rect x="15" y="61" width="11" height="19" rx="3"></rect><rect x="49" y="53" width="11" height="27" rx="3"></rect><rect x="83" y="58" width="11" height="22" rx="3"></rect><rect x="117" y="41" width="11" height="39" rx="3"></rect><rect x="151" y="46" width="11" height="34" rx="3"></rect><rect x="185" y="27" width="11" height="53" rx="3"></rect><rect x="219" y="17" width="11" height="63" rx="3"></rect>
+       </g>
+       <path class="loginShowcaseArea" d="M2 71C24 69 27 53 49 57S74 68 94 49 125 57 145 36 175 49 195 28 226 33 258 9V92H2Z"></path>
+       <path class="loginShowcaseLine" d="M2 71C24 69 27 53 49 57S74 68 94 49 125 57 145 36 175 49 195 28 226 33 258 9"></path>
+       <circle class="loginShowcaseDot" cx="258" cy="9" r="4"></circle>
+      </svg>
+     </div>
+     <div class="loginShowcaseFooter"><span>Sales</span><span>Expenses</span><span>Customer credit</span></div>
+    </div>
+    <span class="loginShowcaseToast"><i>✓</i> Books looking healthy</span>
+   </div>
+   <div class="loginIllustration" role="img" aria-label="Animated bookkeeping dashboard with sales summary and recent payment">
+    <div class="illustrationGlow"></div>
+    <div class="illustrationOrbit illustrationOrbitOuter" aria-hidden="true"></div>
+    <div class="illustrationOrbit illustrationOrbitInner" aria-hidden="true"></div>
+    <svg viewBox="0 0 560 360" role="presentation" aria-hidden="true">
+     <defs>
+      <linearGradient id="screenGradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#162c49"/><stop offset="1" stop-color="#101a2d"/></linearGradient>
+      <linearGradient id="chartGradient" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#5ce6ed"/><stop offset="1" stop-color="#73a8ff"/></linearGradient>
+     </defs>
+     <circle cx="280" cy="184" r="145" fill="#5b9fff" opacity=".08"/>
+     <circle cx="280" cy="184" r="116" fill="#5b9fff" opacity=".07"/>
+     <ellipse cx="283" cy="320" rx="206" ry="17" fill="#071322" opacity=".32"/>
+     <rect x="105" y="64" width="310" height="219" rx="22" fill="#172945" stroke="#547398" stroke-width="2"/>
+     <rect x="119" y="78" width="282" height="187" rx="13" fill="url(#screenGradient)" stroke="#304a6c" stroke-width="2"/>
+     <circle cx="136" cy="94" r="3" fill="#68e0e8"/><circle cx="147" cy="94" r="3" fill="#ffd166" opacity=".8"/><circle cx="158" cy="94" r="3" fill="#ff8492" opacity=".8"/>
+     <path d="M145 223h229" stroke="#30445e" stroke-width="1"/>
+     <rect x="145" y="112" width="70" height="8" rx="4" fill="#a9bad1" opacity=".65"/>
+     <rect x="145" y="128" width="43" height="6" rx="3" fill="#788eaa" opacity=".55"/>
+     <rect x="331" y="111" width="43" height="22" rx="11" fill="#14382f"/><circle cx="342" cy="122" r="3" fill="#4be0a4"/><path d="m349 124 6-6 5 4 9-9" fill="none" stroke="#4be0a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+     <path class="illustrationChartLine" d="M153 203h40v-27h38v12h38v-47h39v22h36v-39h22" fill="none" stroke="url(#chartGradient)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+     <circle class="chartEndGlow" cx="367" cy="124" r="10" fill="#62e6e8" opacity=".17"/>
+     <circle class="chartEndDot" cx="367" cy="124" r="4" fill="#9affed" stroke="#142d47" stroke-width="2"/>
+     <path d="m358 124 9 0 0 9" fill="none" stroke="#73a8ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+     <path d="m226 283-12 35h105l-12-35" fill="#233d61" stroke="#547398" stroke-width="2" stroke-linejoin="round"/>
+     <path d="M192 320h150" stroke="#53769b" stroke-width="8" stroke-linecap="round"/>
+     <circle cx="433" cy="82" r="27" fill="#173751" stroke="#53779b" stroke-width="2"/>
+     <text x="433" y="91" text-anchor="middle" fill="#69e5ed" font-size="27" font-weight="800">₹</text>
+     <path d="M59 266h55" stroke="#375987" stroke-width="6" stroke-linecap="round"/>
+     <rect x="67" y="238" width="41" height="28" rx="7" fill="#1e3a66" stroke="#4772a4" stroke-width="2"/>
+     <path d="M77 239v-6a11 11 0 0 1 22 0v6" fill="none" stroke="#5b9fff" stroke-width="5" stroke-linecap="round"/>
+     <circle cx="88" cy="251" r="3" fill="#5ce6ed"/>
+     <path d="m472 157 5 11 11 5-11 5-5 11-5-11-11-5 11-5zM73 107l4 8 8 4-8 4-4 8-4-8-8-4 8-4z" fill="#70e5ed" opacity=".85"/>
+    </svg>
+    <div class="salesFloatCard" aria-hidden="true">
+     <div class="salesFloatTop"><span class="salesFloatIcon">₹</span><span>Today's sales</span><span class="salesFloatTrend">↗ 12.8%</span></div>
+     <strong>₹5,240</strong>
+     <svg class="salesSparkline" viewBox="0 0 174 30" aria-hidden="true"><defs><linearGradient id="sparkGradient" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5ce6ed"/><stop offset="1" stop-color="#73a8ff"/></linearGradient><linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5ce6ed" stop-opacity=".24"/><stop offset="1" stop-color="#5ce6ed" stop-opacity="0"/></linearGradient></defs><path d="M2 26 24 21 45 23 68 12 91 17 114 8 137 13 157 3 172 5v25H2z" fill="url(#sparkFill)"/><path d="m2 26 22-5 21 2 23-11 23 5 23-9 23 5 20-10 15 2" fill="none" stroke="url(#sparkGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="paymentFloatCard" aria-hidden="true">
+     <span class="paymentFloatIcon">↗</span>
+     <span><strong>Payment received</strong><small>UPI · Just now</small></span>
+     <span class="paymentFloatCheck">✓</span>
+    </div>
+    <div class="floatingCoin floatingCoinOne" aria-hidden="true">₹</div>
+    <div class="floatingCoin floatingCoinTwo" aria-hidden="true">₹</div>
+   </div>
+  </div>
+ </div>
+</section>
+<div class="app" id="mainApp" hidden>
+<aside class="sidebar">
+  <div class="logo"><div class="logoMark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 13v22M35 13v12M13 24h13" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><path d="m24 31 5-6 4 3 6-9m-6 0h6v6" fill="none" stroke="#69f0e0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><strong>HisabAI</strong><small>Your voice. Your business.</small></div></div>
+  <nav class="nav">
+    <button class="active" onclick="showPage('dashboard',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></svg><span>Dashboard</span></button>
+    <button onclick="showPage('voice',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></svg><span>Voice Entry</span></button>
+    <button onclick="showPage('transactions',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8l-5-5h-2"/><path d="M14 3v6h6M7 13h10M7 17h10"/><path d="M8 2v6m-3-3h6"/></svg><span>Transactions</span></button>
+    <button onclick="showPage('credit',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18m-14 5h3"/></svg><span>Credit & reminders</span></button>
+    <button onclick="showPage('customers',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0m2-9a3.5 3.5 0 1 0 0-7m1 10a5 5 0 0 1 3 4.5"/></svg><span>Customers</span></button>
+    <button onclick="showPage('inventory',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.5v9L12 21l-9-4.5v-9L12 3Z"/><path d="m3.5 7.5 8.5 4.4 8.5-4.4M12 12v9m-4-16 9 4.5"/></svg><span>Products & stock</span></button>
+    <button onclick="showPage('bills',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6m-6 4h6m-6 4h3"/></svg><span>Bills</span></button>
+    <button onclick="showPage('reports',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10m8 10V4m8 16v-7M2 20h20"/></svg><span>Reports</span></button>
+  </nav>
+  <div class="sidebarNote"><b>Your business, in one place</b><br><br>Sales, products, and customer records are saved in this browser. Download a backup from Products & stock.</div>
+</aside>
+
+<main class="main">
+<header class="top">
+ <div> <div class="eyebrow">SALES & CUSTOMER MANAGEMENT</div><h1 id="pageTitle">Good evening 👋</h1><div class="subtitle">Run your shop without complicated bookkeeping.</div></div>
+ <div class="profile"><div class="avatar">RK</div><span><b>Ravi Kumar</b><br><small>Shree Kirana Store</small></span><button class="logoutButton" type="button" onclick="logOut()">Log out</button></div>
+</header>
+
+<section id="dashboard" class="page active">
+ <div class="grid">
+  <div class="card metric"><div class="label">TODAY'S SALES</div><div class="value" id="salesMetric">₹5,000</div><div class="up">↗ Updated live</div></div>
+  <div class="card metric"><div class="label">EXPENSES</div><div class="value" id="expenseMetric">₹1,250</div><div class="up">● Recorded</div></div>
+  <div class="card metric"><div class="label">CUSTOMER CREDIT</div><div class="value" id="creditMetric">₹3,200</div><div class="up" id="customerCount">3 customers</div></div>
+  <div class="card metric"><div class="label">ENTRIES TODAY</div><div class="value" id="countMetric">2</div><div class="up">✓ Confirmed</div></div>
+ </div>
+ <div class="hero">
+  <div><div class="eyebrow" style="color:#e8b4d1">Business at a glance</div><h2>Keep your business moving with clear, up-to-date records.</h2><p>Keep sales, expenses, customer credit, and inventory organized in one place.</p></div>
+  <button class="voiceBtn" onclick="showPage('voice')"><span class="mic">＋</span> Record an Entry</button>
+  <div class="heroVisual" aria-hidden="true">
+   <div class="heroVisualGlow"></div>
+   <div class="heroChartCard">
+    <div class="heroChartHead"><span class="heroChartIcon">₹</span><span><b>Sales overview</b><small>Activity at a glance</small></span><span class="heroChartTrend">↗</span></div>
+    <svg class="heroChart" viewBox="0 0 250 100" role="presentation">
+     <defs><linearGradient id="heroChartFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5ce6ed" stop-opacity=".32"/><stop offset="1" stop-color="#5ce6ed" stop-opacity="0"/></linearGradient><linearGradient id="heroChartStroke" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#5ce6ed"/><stop offset="1" stop-color="#73a8ff"/></linearGradient></defs>
+     <path class="heroChartArea" d="M8 82 42 66 76 72 109 43 142 53 177 24 210 35 242 10v82H8z" fill="url(#heroChartFill)"/>
+     <path class="heroChartLine" d="M8 82 42 66 76 72 109 43 142 53 177 24 210 35 242 10" fill="none" stroke="url(#heroChartStroke)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+     <circle class="heroChartDot" cx="242" cy="10" r="5" fill="#a8fff1"/>
+     <path d="M8 92h234M8 61h234M8 30h234" fill="none" stroke="#b9d8ff" stroke-opacity=".12" stroke-dasharray="3 6"/>
+    </svg>
+    <div class="heroChartFoot"><span>Recent activity</span><span><i></i> Updated today</span></div>
+   </div>
+   <span class="heroCoin heroCoinOne">₹</span><span class="heroCoin heroCoinTwo">+</span>
+   <span class="heroSpark heroSparkOne">✦</span><span class="heroSpark heroSparkTwo">✧</span>
+  </div>
+ </div>
+ <div class="sectionTitle"><h3>Stock running low</h3><button class="link" onclick="showPage('inventory')">Manage inventory →</button></div>
+ <div class="card" id="dashboardStock"></div>
+ <div class="sectionTitle"><h3>Recent transactions</h3><button class="link" onclick="showPage('transactions')">View all →</button></div>
+ <div class="card tableWrap"><table><thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Payment</th><th>Amount</th></tr></thead><tbody id="recentBody"></tbody></table></div>
+ <div class="sectionTitle"><h3>Recent bills</h3><button class="link" onclick="showPage('bills')">View all bills →</button></div>
+ <div class="card tableWrap"><table><thead><tr><th>Bill</th><th>Date</th><th>Customer</th><th>Total</th><th>Payment</th><th>Action</th></tr></thead><tbody id="dashboardBills"></tbody></table></div>
+ <div class="sectionTitle"><h3>Credit due soon</h3><button class="link" onclick="showPage('credit')">View credit →</button></div>
+ <div class="card" id="dashboardDue"></div>
+ <div class="sectionTitle"><h3>Security</h3></div>
+ <div class="card securitySetting">
+  <div><h3>Two-step verification</h3><p class="subtitle">Ask for your account password after the PIN when signing in on this browser.</p><small id="twoStepStatus" class="securityStatus">Disabled</small></div>
+  <label class="securityToggle"><input id="twoStepEnabled" type="checkbox"><span>Enable</span></label>
+  <p class="securityDisclaimer">Your sign-in details are saved in this browser. Keep your password private and download regular backups of your business records.</p>
+ </div>
+</section>
+
+<section id="voice" class="page">
+ <div class="voicePage">
+  <div class="card micPanel">
+   <div class="eyebrow">TRANSACTION ENTRY</div><h2>Record a business transaction</h2>
+   <p class="subtitle">Add a sale, expense, or customer credit, then review the details before saving.</p>
+   <button id="mic" class="micCircle" type="button" aria-label="Start voice entry">🎙</button>
+   <div id="listenText" aria-live="polite"><b>Tap the microphone to speak</b><br><small class="subtitle">Or load an example to try the transaction form</small></div>
+   <br><button class="bigAction" onclick="runSampleTransaction()">▶ Try Sample Transaction</button>
+   <div class="transcript" id="transcript">Say something like: “I sold 2,000 rupees in cash.”</div>
+  </div>
+  <div class="card">
+   <div class="eyebrow">REVIEW & SAVE</div><h2>Transaction details</h2>
+   <div class="reviewBox">
+    <span class="aiTag" id="voiceEntryStatus">READY TO REVIEW</span>
+    <div class="form" style="margin-top:15px">
+      <div class="row"><div class="field"><label>TYPE</label><select id="type" onchange="toggleCreditFields()"><option>Sale</option><option>Expense</option><option>Credit</option></select></div><div class="field"><label>AMOUNT</label><input id="amount" type="number" min="0.01" step="0.01" value="5000"></div></div>
+      <div class="row"><div class="field"><label>PAYMENT</label><select id="payment"><option>Cash</option><option>UPI</option><option>Bank</option><option>Credit</option></select></div><div class="field"><label>NOTE / DICTATION</label><textarea id="note" rows="2">Daily sales</textarea></div></div>
+      <div class="row creditFields" id="voiceCreditFields" hidden><div class="field"><label>CUSTOMER</label><select id="voiceCustomer"></select></div><div class="field"><label>PAY BY</label><input id="voiceDueDate" type="date"></div></div>
+      <button class="bigAction" onclick="saveEntry()">✓ Confirm & Save</button>
+    </div>
+   </div>
+   <p class="subtitle" style="margin-top:18px">Review the interpreted details before saving to keep every entry accurate.</p>
+  </div>
+ </div>
+</section>
+
+<section id="transactions" class="page">
+ <div class="sectionTitle"><div><h2>Transaction history</h2><div class="subtitle">Every confirmed entry in one place.</div></div><div class="toolbarActions"><button class="smallAction" onclick="openSaleModal()">+ New sale</button><button class="bigAction" onclick="showPage('voice')">+ Voice entry</button></div></div>
+ <div class="card">
+  <div class="toolbar"><input id="txSearch" type="search" placeholder="Search transactions or customers"><select id="txType"><option value="">All types</option><option>Sale</option><option>Expense</option><option>Credit</option><option>Payment</option></select><input id="txFrom" type="date" aria-label="From date"><input id="txTo" type="date" aria-label="To date"><button class="smallAction" onclick="clearFilters()">Clear filters</button><button class="smallAction" onclick="exportCsv()">Export CSV</button></div>
+  <div class="tableWrap"><table><thead><tr><th>Date</th><th>Description</th><th>Type</th><th>Customer</th><th>Payment</th><th>Amount</th><th>Actions</th></tr></thead><tbody id="allBody"></tbody></table></div>
+ </div>
+</section>
+
+<section id="bills" class="page">
+ <div class="sectionTitle"><div><h2>Digital bills</h2><div class="subtitle">View, print, download, or share a customer-ready bill for any sale.</div></div><button class="bigAction" onclick="openSaleModal()">+ New sale</button></div>
+ <div class="grid billMetrics">
+  <div class="card metric"><div class="label">BILLS ISSUED</div><div class="value" id="billCount">0</div><div class="up">Recorded sales</div></div>
+  <div class="card metric"><div class="label">TOTAL SALES</div><div class="value" id="billSalesTotal">₹0</div><div class="up">Across all bills</div></div>
+  <div class="card metric"><div class="label">BALANCE DUE</div><div class="value" id="billBalanceTotal">₹0</div><div class="up">Outstanding on sales</div></div>
+ </div>
+ <div class="card billSettings">
+  <h3>Business details on bills</h3>
+  <p class="subtitle">These details appear on new previews and downloaded bills.</p>
+  <form id="billProfileForm" class="toolbar billProfileForm">
+   <label class="field" for="billBusinessName">BUSINESS NAME<input id="billBusinessName" maxlength="100" required></label>
+   <label class="field" for="billBusinessPhone">BUSINESS PHONE (OPTIONAL)<input id="billBusinessPhone" type="tel" maxlength="32" placeholder="Phone number"></label>
+   <button class="smallAction" type="submit">Save business details</button>
+   <span id="billProfileFeedback" class="subtitle" role="status" aria-live="polite"></span>
+  </form>
+ </div>
+ <div class="card">
+  <div class="toolbar billFilters">
+   <input id="billSearch" type="search" placeholder="Search bill, customer, or amount" aria-label="Search bills">
+   <input id="billFrom" type="date" aria-label="Bills from date">
+   <input id="billTo" type="date" aria-label="Bills to date">
+   <select id="billPaymentFilter" aria-label="Filter bills by payment"><option value="">All payment methods</option><option>Cash</option><option>UPI</option><option>Bank</option><option>Credit</option><option value="Partial">Partial payment</option></select>
+   <button class="smallAction" type="button" onclick="clearBillFilters()">Clear filters</button>
+   <button class="smallAction" type="button" onclick="exportBillsCsv()">Export matching CSV</button>
+  </div>
+  <div class="tableWrap"><table><thead><tr><th>Bill number</th><th>Date</th><th>Customer</th><th>Total</th><th>Payment</th><th>Balance due</th><th>Actions</th></tr></thead><tbody id="billBody"></tbody></table></div>
+ </div>
+</section>
+
+<section id="inventory" class="page">
+ <div class="sectionTitle"><div><h2>Products & inventory</h2><div class="subtitle">Manage your catalog, prices, and stock levels.</div></div><div class="toolbarActions"><button class="smallAction" onclick="exportBackup()">Download backup</button><button class="smallAction" onclick="document.getElementById('backupFile').click()">Restore backup</button><input id="backupFile" type="file" accept="application/json,.json" hidden></div></div>
+ <div class="grid inventoryMetrics">
+  <div class="card metric"><div class="label">PRODUCTS</div><div class="value" id="productCount">0</div><div class="up">In your catalog</div></div>
+  <div class="card metric"><div class="label">STOCK VALUE</div><div class="value" id="stockValue">₹0</div><div class="up">At cost price</div></div>
+  <div class="card metric"><div class="label">LOW STOCK</div><div class="value" id="lowStockCount">0</div><div class="up">At or below reorder level</div></div>
+  <div class="card metric"><div class="label">OUT OF STOCK</div><div class="value" id="outOfStockCount">0</div><div class="up">Needs replenishment</div></div>
+ </div>
+ <div class="card inventoryEditor">
+  <h3 id="productFormTitle">Add a product</h3>
+  <form id="productForm" class="form">
+   <div class="row"><div class="field"><label for="productName">PRODUCT NAME</label><input id="productName" maxlength="100" required placeholder="e.g. Basmati rice"></div><div class="field"><label for="productSku">SKU / BARCODE (OPTIONAL)</label><input id="productSku" maxlength="48" placeholder="e.g. RICE-001"></div></div>
+   <div class="row"><div class="field"><label for="productCategory">CATEGORY</label><input id="productCategory" maxlength="60" placeholder="e.g. Grocery"></div><div class="field"><label for="productPrice">SELLING PRICE (₹)</label><input id="productPrice" type="number" min="0.01" step="0.01" required placeholder="0.00"></div></div>
+   <div class="row"><div class="field"><label for="productCost">COST PRICE (₹)</label><input id="productCost" type="number" min="0" step="0.01" value="0" required></div><div class="field"><label for="productStock">STOCK ON HAND</label><input id="productStock" type="number" min="0" step="0.01" value="0" required></div><div class="field"><label for="productLowStock">LOW-STOCK ALERT AT</label><input id="productLowStock" type="number" min="0" step="0.01" value="5" required></div></div>
+   <div class="formActions"><button class="smallAction" id="cancelProductEdit" type="button" onclick="resetProductForm()" hidden>Cancel edit</button><button class="bigAction" id="productSubmit" type="submit">Add product</button></div>
+  </form>
+ </div>
+ <div class="sectionTitle"><h3>Product catalog</h3><input id="productSearch" class="inlineSearch" type="search" placeholder="Search products, SKU, category" aria-label="Search products"></div>
+ <div class="card tableWrap"><table><thead><tr><th>Product</th><th>SKU</th><th>Category</th><th>Price</th><th>Cost</th><th>In stock</th><th>Stock status</th><th>Actions</th></tr></thead><tbody id="productBody"></tbody></table></div>
+</section>
+
+<section id="credit" class="page">
+ <div class="sectionTitle"><div><h2>Credit & reminders</h2><div class="subtitle">Track outstanding balances and follow up on due dates.</div></div><button class="bigAction" onclick="showPage('voice')">+ Add credit</button></div>
+ <div class="grid">
+  <div class="card metric"><div class="label">TOTAL OUTSTANDING</div><div class="value" id="creditTotal">₹0</div><div class="up">Across all customers</div></div>
+  <div class="card metric"><div class="label">OVERDUE</div><div class="value" id="overdueTotal">₹0</div><div class="up">Needs follow-up</div></div>
+  <div class="card metric"><div class="label">CUSTOMERS WITH BALANCE</div><div class="value" id="owingCount">0</div><div class="up">Open accounts</div></div>
+  <div class="card metric"><div class="label">DUE IN 7 DAYS</div><div class="value" id="dueSoonTotal">₹0</div><div class="up">Upcoming payments</div></div>
+ </div>
+ <div class="sectionTitle"><h3>Due dates & reminders</h3><button class="link" onclick="showPage('customers')">Manage customers →</button></div>
+ <div class="card" id="dueList"></div>
+</section>
+
+<section id="customers" class="page">
+ <div class="sectionTitle"><div><h2>Customers</h2><div class="subtitle">Manage customer details, balances, and payment follow-ups.</div></div></div>
+ <div class="card" style="margin-bottom:16px">
+  <h3 id="customerFormTitle">Add a customer</h3>
+  <form id="customerForm" class="form">
+   <div class="row"><div class="field"><label for="customerName">NAME</label><input id="customerName" maxlength="80" required placeholder="Customer name"></div><div class="field"><label for="customerPhone">PHONE (OPTIONAL)</label><input id="customerPhone" type="tel" maxlength="24" placeholder="e.g. +91 98765 43210"></div></div>
+   <div class="formActions"><button class="smallAction" id="cancelCustomerEdit" type="button" onclick="resetCustomerForm()" hidden>Cancel edit</button><button class="bigAction" id="customerSubmit" type="submit">Add customer</button></div>
+  </form>
+ </div>
+ <div class="card tableWrap"><table><thead><tr><th>Customer</th><th>Phone</th><th>Outstanding</th><th>Next due</th><th>Actions</th></tr></thead><tbody id="customerBody"></tbody></table></div>
+</section>
+
+<section id="reports" class="page">
+ <div class="sectionTitle"><div><h2>Business reports</h2><div class="subtitle">Simple figures for everyday decisions.</div></div></div>
+ <div class="reportGrid">
+  <div class="card"><h3>Sales vs expenses</h3><div style="margin-top:22px"><small>Sales · <span id="reportSales">₹0</span></small><div class="bar"><i id="salesBar" style="width:0%"></i></div><small>Expenses · <span id="reportExpenses">₹0</span></small><div class="bar"><i id="expenseBar" style="width:0%"></i></div><h2 id="netReport">₹0 <small class="subtitle">net movement</small></h2></div></div>
+  <div class="card"><h3>Payment mix</h3><p>Cash <b id="cashPercent" style="float:right">0%</b></p><div class="bar"><i id="cashBar" style="width:0%"></i></div><p>UPI <b id="upiPercent" style="float:right">0%</b></p><div class="bar"><i id="upiBar" style="width:0%"></i></div><p>Other <b id="otherPercent" style="float:right">0%</b></p><div class="bar"><i id="otherBar" style="width:0%"></i></div><p class="subtitle">Based on recorded sales.</p></div>
+ </div>
+ <div class="card" style="margin-top:16px"><h3>What HisabAI helps answer</h3><div class="grid" style="margin-top:12px"><div><b>How much did I sell?</b><br><span class="subtitle">Daily & weekly sales</span></div><div><b>Where did money go?</b><br><span class="subtitle">Expense categories</span></div><div><b>Who owes me?</b><br><span class="subtitle">Credit tracking</span></div><div><b>How was I paid?</b><br><span class="subtitle">Cash / UPI / bank</span></div></div></div>
+</section>
+</main>
+</div>
+<div class="mobileNav" hidden>
+ <button class="active" onclick="showPage('dashboard',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/></svg>Home</button><button onclick="showPage('voice',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></svg>Voice</button><button onclick="showPage('transactions',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8l-5-5h-2"/><path d="M14 3v6h6M7 13h10M7 17h10"/></svg>History</button><button onclick="showPage('credit',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18m-14 5h3"/></svg>Credit</button><button onclick="showPage('customers',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0m2-9a3.5 3.5 0 1 0 0-7m1 10a5 5 0 0 1 3 4.5"/></svg>People</button><button onclick="showPage('inventory',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.5v9L12 21l-9-4.5v-9L12 3Z"/><path d="m3.5 7.5 8.5 4.4 8.5-4.4M12 12v9"/></svg>Stock</button><button onclick="showPage('bills',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2V3Z"/><path d="M9 8h6m-6 4h6m-6 4h3"/></svg>Bills</button><button onclick="showPage('reports',this)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10m8 10V4m8 16v-7M2 20h20"/></svg>Reports</button>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modalBackdrop" id="secondStepModal" hidden>
+ <section class="modal secondStepModal" role="dialog" aria-modal="true" aria-labelledby="secondStepTitle">
+  <div class="modalHead"><div><div class="eyebrow">SECOND STEP</div><h2 id="secondStepTitle">Verify your password</h2></div><button class="modalClose" id="cancelSecondStep" type="button" aria-label="Cancel">&times;</button></div>
+  <p class="subtitle">Your PIN was accepted. Enter your account password to continue.</p>
+  <form id="secondStepForm" class="form">
+   <div class="field"><label for="secondStepPassword">ACCOUNT PASSWORD</label><input id="secondStepPassword" type="password" autocomplete="current-password" required></div>
+   <p class="secondStepFeedback" id="secondStepFeedback" role="status" aria-live="polite"></p>
+   <div class="formActions"><button class="smallAction" id="cancelSecondStepButton" type="button">Cancel</button><button class="bigAction" id="verifySecondStep" type="submit">Verify &amp; continue</button></div>
+  </form>
+ </section>
+</div>
+<div class="modalBackdrop" id="transactionModal" hidden>
+ <section class="modal" role="dialog" aria-modal="true" aria-labelledby="transactionModalTitle">
+  <div class="modalHead"><h2 id="transactionModalTitle">Edit transaction</h2><button class="modalClose" type="button" onclick="closeTransactionModal()" aria-label="Close">&times;</button></div>
+  <form id="transactionForm" class="form">
+   <div class="row"><div class="field"><label for="modalType">TYPE</label><select id="modalType"><option>Sale</option><option>Expense</option><option>Credit</option><option>Payment</option></select></div><div class="field"><label for="modalAmount">AMOUNT</label><input id="modalAmount" type="number" min="0.01" step="0.01" required></div></div>
+   <div class="row"><div class="field"><label for="modalDate">DATE</label><input id="modalDate" type="date" required></div><div class="field"><label for="modalPayment">PAYMENT METHOD</label><select id="modalPayment"><option>Cash</option><option>UPI</option><option>Bank</option><option>Credit</option></select></div></div>
+   <div class="field"><label for="modalDesc">DESCRIPTION</label><input id="modalDesc" maxlength="120" required></div>
+   <div class="row" id="modalCustomerFields"><div class="field"><label for="modalCustomer">CUSTOMER</label><select id="modalCustomer"></select></div><div class="field" id="modalDueField"><label for="modalDueDate">PAY BY</label><input id="modalDueDate" type="date"></div></div>
+   <div class="formActions"><button class="smallAction" type="button" onclick="closeTransactionModal()">Cancel</button><button class="bigAction" type="submit">Save transaction</button></div>
+  </form>
+ </section>
+</div>
+<div class="modalBackdrop" id="saleModal" hidden>
+ <section class="modal saleModal" role="dialog" aria-modal="true" aria-labelledby="saleModalTitle">
+  <div class="modalHead"><div><div class="eyebrow">CHECKOUT</div><h2 id="saleModalTitle">Create a sale</h2></div><button class="modalClose" type="button" onclick="closeSaleModal()" aria-label="Close">&times;</button></div>
+  <form id="saleForm" class="form">
+   <div class="row"><div class="field"><label for="saleCustomer">CUSTOMER (OPTIONAL FOR PAID SALES)</label><select id="saleCustomer"></select></div><div class="field"><label for="saleDate">SALE DATE</label><input id="saleDate" type="date" required></div></div>
+   <div class="field"><label>ITEMS</label><div id="saleItems" class="saleItems"></div><button class="smallAction" id="addSaleItem" type="button">+ Add item</button></div>
+   <div class="row"><div class="field"><label for="salePayment">PAYMENT METHOD</label><select id="salePayment"><option>Cash</option><option>UPI</option><option>Bank</option><option>Credit</option></select></div><div class="field"><label for="salePaid">PAID NOW (₹)</label><input id="salePaid" type="number" min="0" step="0.01" value="0" required></div></div>
+   <div class="row"><div class="field"><label for="saleDueDate">PAYMENT DUE DATE (IF BALANCE IS DUE)</label><input id="saleDueDate" type="date"></div><div class="field"><label for="saleNote">NOTE (OPTIONAL)</label><input id="saleNote" maxlength="120" placeholder="Sale description"></div></div>
+   <div class="saleTotals"><span>Subtotal <b id="saleSubtotal">₹0</b></span><span>Balance due <b id="saleBalance">₹0</b></span></div>
+   <p id="saleFeedback" class="saleFeedback" role="status" aria-live="polite"></p>
+   <div class="formActions"><button class="smallAction" type="button" onclick="closeSaleModal()">Cancel</button><button class="bigAction" type="submit">Save sale</button></div>
+  </form>
+ </section>
+</div>
+<div class="modalBackdrop" id="billModal" hidden>
+ <section class="modal billModal" role="dialog" aria-modal="true" aria-labelledby="billModalTitle">
+  <div class="modalHead billToolbar"><div><div class="eyebrow">CUSTOMER COPY</div><h2 id="billModalTitle">Digital bill</h2></div><button class="modalClose" type="button" onclick="closeBill()" aria-label="Close">&times;</button></div>
+  <div id="billPreview" class="billPreview"></div>
+  <div class="billActions"><button class="smallAction" type="button" onclick="downloadBill()">Download digital bill</button><button class="smallAction" type="button" onclick="shareBill()">Share bill</button><button class="bigAction" type="button" onclick="printBill()">Print / Save PDF</button></div>
+  <p class="billHelp">Download the bill, share it from a supported device, or print it / save it as a PDF.</p>
+ </section>
+</div>
+<script src="auth.js"></script>
+<script>
+const LEGACY_STATE_KEY="hisabai-prototype-v1";
+const DASHBOARD_PAGE=location.pathname.endsWith("/dashboard.html");
+const todayISO=()=>{const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());return d.toISOString().slice(0,10)};
+const shiftDate=(days)=>{const d=new Date(`${todayISO()}T12:00:00`);d.setDate(d.getDate()+days);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`};
+const uid=()=>`${Date.now().toString(36)}-${Math.random().toString(36).slice(2,8)}`;
+let tx=[],customers=[],products=[],stateRevision=0,isDemoData=false,lastKnownState={tx:[],customers:[],products:[],demoData:false};
+let editingCustomerId="",editingTransactionId="",editingProductId="";
+let persistQueue=Promise.resolve();
+let voiceRecognition=null;
+const pageTitles={dashboard:"Good evening 👋",voice:"Voice entry",transactions:"Transactions",credit:"Credit & reminders",customers:"Customers",inventory:"Products & stock",bills:"Digital bills",reports:"Reports"};
+function escapeHtml(value){return String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]))}
+function money(n){return "₹"+Number(n||0).toLocaleString("en-IN",{maximumFractionDigits:2})}
+function displayDate(value){if(!value)return "—";const d=new Date(`${value}T12:00:00`);return Number.isNaN(d.getTime())?escapeHtml(value):d.toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"})}
+function setLocalState(state){
+ tx=state.tx;customers=state.customers;products=state.products;stateRevision=state.revision;isDemoData=state.demoData===true;
+ lastKnownState={tx:structuredClone(tx),customers:structuredClone(customers),products:structuredClone(products),demoData:isDemoData};
+}
+async function localRequest(operation,{body}={}){
+ const payload=body?JSON.parse(body):{};
+ switch(operation){
+  case "load-state":return HisabAIAuth.loadState();
+  case "save-state":
+   if(!validBackup({app:"HisabAI",schemaVersion:1,transactions:payload.tx,customers:payload.customers,products:payload.products})){
+    throw new Error("Business records have an invalid format and were not saved.");
+   }
+   return HisabAIAuth.saveState(payload);
+  case "login":return HisabAIAuth.login(payload.identifier,payload.pin);
+  case "login-password":return HisabAIAuth.loginPassword(payload.identifier,payload.password);
+  case "session":return HisabAIAuth.getSession();
+  case "account-security":return HisabAIAuth.setTwoStep(payload.two_step_enabled);
+  case "logout":return HisabAIAuth.logout();
+  default:throw new Error(`Unknown local operation: ${operation}`);
+ }
+}
+async function loadLocalState(){
+ setLocalState(await localRequest("load-state"));
+ render();
+}
+function persist(){
+ const snapshot={tx:structuredClone(tx),customers:structuredClone(customers),products:structuredClone(products),demoData:isDemoData};
+ const operation=persistQueue.then(async()=>{
+  try{
+   const state=await localRequest("save-state",{body:JSON.stringify({...snapshot,revision:stateRevision})});
+   stateRevision=state.revision;
+   lastKnownState=snapshot;
+   return true;
+  }catch(error){
+   console.error("Unable to save HisabAI data in this browser:",error);
+   try{await loadLocalState()}catch(refreshError){
+    console.error("Unable to refresh HisabAI data after a save failure:",refreshError);
+    ({tx,customers,products,demoData:isDemoData}=lastKnownState);
+   }
+   toast(`Could not save your changes: ${error.message}`);
+   return false;
+  }
+ });
+ persistQueue=operation.then(()=>undefined,()=>undefined);
+ return operation;
+}
+function customerName(id){return customers.find(c=>c.id===id)?.name||""}
+function unpaidAmount(transaction){
+ if(transaction.type==="Credit")return Number(transaction.amount);
+ if(transaction.type!=="Sale")return 0;
+ const paid=transaction.paidAmount??(transaction.payment==="Credit"?0:Number(transaction.amount));
+ return Math.max(0,Number(transaction.amount)-Number(paid));
+}
+function customerBalance(id){return tx.reduce((balance,t)=>t.customerId===id?balance+unpaidAmount(t)-(t.type==="Payment"?Number(t.amount):0):balance,0)}
+function ledgerIsValid(records){
+ const balances=new Map(customers.map(customer=>[customer.id,0]));
+ records.forEach(t=>{if(balances.has(t.customerId))balances.set(t.customerId,balances.get(t.customerId)+unpaidAmount(t)-(t.type==="Payment"?Number(t.amount):0))});
+ return[...balances.values()].every(balance=>balance>=-0.009);
+}
+function balanceDueDate(id){
+ return tx.filter(t=>t.customerId===id&&unpaidAmount(t)>0&&["Credit","Sale"].includes(t.type)&&t.dueDate).sort((a,b)=>a.dueDate.localeCompare(b.dueDate))[0]?.dueDate||"";
+}
+function statusForDue(date){
+ if(!date)return{label:"No due date",className:""};
+ if(date<todayISO())return{label:`Overdue · ${displayDate(date)}`,className:"overdue"};
+ if(date===todayISO())return{label:"Due today",className:"overdue"};
+ return{label:`Due · ${displayDate(date)}`,className:"dueSoon"};
+}
+function creditCustomers(){return customers.map(c=>({customer:c,balance:customerBalance(c.id),dueDate:balanceDueDate(c.id)})).filter(item=>item.balance>0.009)}
+function fillCustomerSelect(selectId,includeBlank=true){
+ const select=document.getElementById(selectId),previous=select.value;
+ select.innerHTML=(includeBlank?'<option value="">Select customer</option>':"")+customers.map(c=>`<option value="${escapeHtml(c.id)}">${escapeHtml(c.name)}</option>`).join("");
+ if(customers.some(c=>c.id===previous))select.value=previous;
+}
+function toast(msg){
+ const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");
+ clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove("show"),2600);
+}
+function filteredTransactions(){
+ const query=document.getElementById("txSearch").value.trim().toLowerCase();
+ const type=document.getElementById("txType").value,from=document.getElementById("txFrom").value,to=document.getElementById("txTo").value;
+ return tx.filter(t=>{
+  const items=(t.lineItems||[]).map(item=>item.name).join(" ");
+  const haystack=`${t.desc} ${items} ${t.type} ${t.payment} ${t.paymentMethod||""} ${customerName(t.customerId)}`.toLowerCase();
+  return(!query||haystack.includes(query))&&(!type||t.type===type)&&(!from||t.date>=from)&&(!to||t.date<=to);
+ }).sort((a,b)=>b.date.localeCompare(a.date));
+}
+function transactionRow(t,includeActions=true){
+ const typeClass=t.type==="Sale"?"sale":t.type==="Expense"?"expense":"credit";
+ const customer=customerName(t.customerId);
+ const paymentLabel=t.paymentMethod||t.payment||"—",balance=unpaidAmount(t);
+ const paymentStatus=t.type==="Sale"?`<small class="paymentStatus ${balance>0?"dueSoon":"paidStatus"}">${balance>0?`${money(balance)} due`:"Paid"}</small>`:"";
+ const itemSummary=t.lineItems?.length?`<small class="transactionItems">${t.lineItems.map(item=>`${Number(item.quantity).toLocaleString("en-IN")} × ${escapeHtml(item.name)}`).join(", ")}</small>`:"";
+ const actions=includeActions?`<td><div class="actions">${t.type==="Sale"?`<button class="smallAction" data-action="view-bill" data-id="${escapeHtml(t.id)}">Bill</button>`:""}${t.lineItems?'<span class="subtitle">Sale</span>':`<button class="smallAction" data-action="edit-tx" data-id="${escapeHtml(t.id)}">Edit</button>`}<button class="dangerAction" data-action="delete-tx" data-id="${escapeHtml(t.id)}">Delete</button></div></td>`:"";
+ return`<tr><td>${displayDate(t.date)}</td><td><b>${escapeHtml(t.desc)}</b>${itemSummary}</td><td><span class="pill ${typeClass}">${escapeHtml(t.type)}</span></td><td>${escapeHtml(customer||"—")}</td><td>${escapeHtml(paymentLabel)}${paymentStatus}</td><td><b>${money(t.amount)}</b></td>${actions}</tr>`;
+}
+function billNumber(transaction){
+ return`HA-${String(transaction.date||todayISO()).replaceAll("-","")}-${transaction.id.slice(-6).toUpperCase()}`;
+}
+function billItems(transaction){
+ if(transaction.lineItems?.length)return transaction.lineItems.map(item=>({
+  name:String(item.name||"Item"),
+  quantity:Number(item.quantity)||0,
+  unitPrice:Number(item.unitPrice)||0,
+  total:Number(item.lineTotal??Number(item.quantity)*Number(item.unitPrice))||0
+ }));
+ return[{name:transaction.desc||"Sale",quantity:null,unitPrice:Number(transaction.amount),total:Number(transaction.amount)}];
+}
+const BILL_PROFILE_KEY="hisabai-bill-profile-v1";
+let billProfile={name:"Shree Kirana Store",phone:""};
+function loadBillProfile(){
+ try{
+  const raw=localStorage.getItem(BILL_PROFILE_KEY);
+  if(raw){
+   const saved=JSON.parse(raw);
+   if(!saved||typeof saved.name!=="string"||typeof saved.phone!=="string")throw new Error("Saved business details have an invalid format.");
+   billProfile={name:saved.name,phone:saved.phone};
+  }
+  document.getElementById("billBusinessName").value=billProfile.name;
+  document.getElementById("billBusinessPhone").value=billProfile.phone;
+ }catch(error){
+  console.error("Unable to load the business details for bills:",error);
+  document.getElementById("billProfileFeedback").textContent="Could not load saved business details. You can enter and save them again.";
+ }
+}
+document.getElementById("billProfileForm").addEventListener("submit",event=>{
+ event.preventDefault();
+ const name=document.getElementById("billBusinessName").value.trim(),phone=document.getElementById("billBusinessPhone").value.trim();
+ if(!name){document.getElementById("billProfileFeedback").textContent="Enter a business name.";return}
+ try{
+  const profile={name,phone};
+  localStorage.setItem(BILL_PROFILE_KEY,JSON.stringify(profile));
+  billProfile=profile;
+  document.getElementById("billProfileFeedback").textContent="Business details saved.";
+  renderBills();
+  if(currentBillId)openBill(currentBillId);
+ }catch(error){
+  console.error("Unable to save the business details for bills:",error);
+  document.getElementById("billProfileFeedback").textContent="Could not save these details. Check browser storage and try again.";
+ }
+});
+function billMarkup(transaction){
+ const customer=customers.find(item=>item.id===transaction.customerId),items=billItems(transaction);
+ const paid=Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount));
+ const balance=Math.max(0,Number(transaction.amount)-paid);
+ const paymentMethod=transaction.paymentMethod||transaction.payment||"—";
+ return`<article class="billSheet"><header class="billBrand"><div><span class="billBrandMark">H</span><span><strong>HisabAI</strong><small>${escapeHtml(billProfile.name)}</small>${billProfile.phone?`<small>${escapeHtml(billProfile.phone)}</small>`:""}</span></div><span class="billCopyLabel">CUSTOMER COPY</span></header><div class="billTitleRow"><div><p>SALES RECEIPT</p><h2>Thank you for your purchase</h2></div><div class="billNumber"><small>BILL NUMBER</small><strong>${escapeHtml(billNumber(transaction))}</strong></div></div><div class="billMeta"><div><small>BILLED TO</small><strong>${escapeHtml(customer?.name||"Walk-in customer")}</strong>${customer?.phone?`<span>${escapeHtml(customer.phone)}</span>`:""}</div><div><small>DATE</small><strong>${escapeHtml(displayDate(transaction.date))}</strong></div><div><small>PAYMENT</small><strong>${escapeHtml(paymentMethod)}</strong></div></div><table class="billTable"><thead><tr><th>Item</th><th>Qty</th><th>Price</th><th>Total</th></tr></thead><tbody>${items.map(item=>`<tr><td>${escapeHtml(item.name)}</td><td>${item.quantity===null?"—":escapeHtml(Number(item.quantity).toLocaleString("en-IN"))}</td><td>${money(item.unitPrice)}</td><td>${money(item.total)}</td></tr>`).join("")}</tbody></table><div class="billTotals"><div><span>Subtotal</span><strong>${money(transaction.amount)}</strong></div><div><span>Total</span><strong>${money(transaction.amount)}</strong></div><div><span>Paid</span><strong>${money(paid)}</strong></div><div class="${balance>0?"billBalanceDue":""}"><span>Balance due${balance>0&&transaction.dueDate?` · ${escapeHtml(displayDate(transaction.dueDate))}`:""}</span><strong>${money(balance)}</strong></div></div><footer class="billThanks">Thank you for shopping with us.</footer></article>`;
+}
+function renderBills(){
+ const allSales=tx.filter(transaction=>transaction.type==="Sale").sort((a,b)=>b.date.localeCompare(a.date)||b.id.localeCompare(a.id));
+ const query=document.getElementById("billSearch").value.trim().toLowerCase();
+ const from=document.getElementById("billFrom").value,to=document.getElementById("billTo").value,payment=document.getElementById("billPaymentFilter").value;
+ const sales=allSales.filter(transaction=>{
+  const customer=customerName(transaction.customerId),method=transaction.paymentMethod||transaction.payment||"—";
+  const searchable=`${billNumber(transaction)} ${customer} ${transaction.desc||""} ${transaction.amount} ${method}`.toLowerCase();
+  const paid=Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount));
+  const paymentMatches=!payment||(payment==="Partial"?unpaidAmount(transaction)>0&&paid>0:method===payment);
+  return(!query||searchable.includes(query))&&(!from||transaction.date>=from)&&(!to||transaction.date<=to)&&paymentMatches;
+ });
+ const rowMarkup=transaction=>`<tr><td><b>${escapeHtml(billNumber(transaction))}</b></td><td>${displayDate(transaction.date)}</td><td>${escapeHtml(customerName(transaction.customerId)||"Walk-in customer")}</td><td><b>${money(transaction.amount)}</b></td><td>${escapeHtml(transaction.paymentMethod||transaction.payment||"—")}</td><td>${money(unpaidAmount(transaction))}</td><td><div class="actions"><button class="smallAction" data-action="view-bill" data-id="${escapeHtml(transaction.id)}">View</button><button class="smallAction" data-action="download-bill" data-id="${escapeHtml(transaction.id)}">Download</button><button class="smallAction" data-action="share-bill" data-id="${escapeHtml(transaction.id)}">Share</button><button class="smallAction" data-action="print-bill" data-id="${escapeHtml(transaction.id)}">Print</button></div></td></tr>`;
+ document.getElementById("billCount").textContent=allSales.length.toLocaleString("en-IN");
+ document.getElementById("billSalesTotal").textContent=money(allSales.reduce((sum,transaction)=>sum+Number(transaction.amount),0));
+ document.getElementById("billBalanceTotal").textContent=money(allSales.reduce((sum,transaction)=>sum+unpaidAmount(transaction),0));
+ document.getElementById("billBody").innerHTML=sales.length?sales.map(rowMarkup).join(""):allSales.length?'<tr><td class="empty" colspan="7">No bills match these filters. Change or clear the filters.</td></tr>':'<tr><td class="empty" colspan="7">No sales yet. Record a sale to create your first digital bill.</td></tr>';
+ document.getElementById("dashboardBills").innerHTML=allSales.length?allSales.slice(0,3).map(transaction=>`<tr><td><b>${escapeHtml(billNumber(transaction))}</b></td><td>${displayDate(transaction.date)}</td><td>${escapeHtml(customerName(transaction.customerId)||"Walk-in customer")}</td><td><b>${money(transaction.amount)}</b></td><td>${escapeHtml(transaction.paymentMethod||transaction.payment||"—")}</td><td><button class="smallAction" data-action="view-bill" data-id="${escapeHtml(transaction.id)}">View bill</button></td></tr>`).join(""):'<tr><td class="empty" colspan="6">Your completed sales will appear here as customer-ready bills.</td></tr>';
+}
+let currentBillId="";
+function openBill(id){
+ const transaction=tx.find(item=>item.id===id&&item.type==="Sale");
+ if(!transaction){currentBillId="";toast("This sale could not be found.");return}
+ currentBillId=id;document.getElementById("billModalTitle").textContent=`Bill ${billNumber(transaction)}`;
+ document.getElementById("billPreview").innerHTML=billMarkup(transaction);
+ document.getElementById("billModal").hidden=false;
+}
+function closeBill(){document.getElementById("billModal").hidden=true;currentBillId=""}
+function currentBill(){
+ const transaction=tx.find(item=>item.id===currentBillId&&item.type==="Sale");
+ if(!transaction)throw new Error("The selected sale is no longer available.");
+ return transaction;
+}
+function invoiceDocument(transaction){
+ const styles=`*{box-sizing:border-box}body{margin:0;padding:32px;background:#f3f6fa;color:#172033;font:14px Arial,sans-serif}.billSheet{max-width:760px;margin:0 auto;padding:42px;background:#fff;border:1px solid #dce3ed;border-radius:14px}.billBrand,.billBrand>div,.billTitleRow,.billMeta,.billTotals>div{display:flex;justify-content:space-between;align-items:center;gap:16px}.billBrand>div{justify-content:flex-start}.billBrandMark{display:grid;width:44px;height:44px;place-items:center;border-radius:14px;background:#e1f8fb;color:#157c97;font-size:23px;font-weight:900}.billBrand strong,.billBrand small,.billMeta small,.billMeta strong,.billMeta span,.billNumber small,.billNumber strong{display:block}.billBrand strong{font-size:18px}.billBrand small{margin-top:4px;color:#64748b}.billCopyLabel,.billTitleRow p,.billMeta small,.billNumber small{color:#64748b;font-size:10px;font-weight:800;letter-spacing:.1em}.billTitleRow{margin:34px 0 24px;align-items:flex-end}.billTitleRow p{margin:0 0 7px;color:#16819a}.billTitleRow h2{margin:0;font-size:25px;letter-spacing:-.04em}.billNumber{text-align:right}.billNumber strong{margin-top:7px;color:#16819a}.billMeta{align-items:flex-start;padding:17px 0;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0}.billMeta small{margin-bottom:7px}.billMeta strong{font-size:12px}.billMeta span{margin-top:4px;color:#64748b}.billTable{width:100%;margin-top:24px;border-collapse:collapse}.billTable th,.billTable td{padding:12px 8px;border-bottom:1px solid #e2e8f0;text-align:left}.billTable th{color:#64748b;font-size:10px;letter-spacing:.07em;text-transform:uppercase}.billTable th:nth-child(n+2),.billTable td:nth-child(n+2){text-align:right}.billTotals{width:min(330px,100%);margin:18px 0 0 auto}.billTotals>div{padding:8px 0}.billTotals>div:nth-child(2){border-top:1px solid #d9e1ec;font-size:16px}.billBalanceDue{color:#aa5c00}.billThanks{margin-top:32px;padding-top:16px;border-top:1px solid #e2e8f0;color:#64748b;text-align:center;font-size:12px}@media print{body{padding:0;background:#fff}.billSheet{max-width:none;border:0;border-radius:0;padding:14mm}}`;
+ return`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bill ${escapeHtml(billNumber(transaction))} · ${escapeHtml(billProfile.name)}</title><style>${styles}</style></head><body>${billMarkup(transaction)}</body></html>`;
+}
+function downloadBill(){
+ try{
+  const transaction=currentBill(),blob=new Blob([invoiceDocument(transaction)],{type:"text/html;charset=utf-8"});
+  const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=`${billNumber(transaction)}.html`;
+  document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  toast("Digital bill downloaded. Open it in a browser or share the file with your customer.");
+ }catch(error){console.error("Unable to download the HisabAI bill:",error);toast("Could not download this bill. Try printing it instead.")}
+}
+function printBill(){
+ try{currentBill();window.print()}
+ catch(error){console.error("Unable to print the HisabAI bill:",error);toast("Could not prepare this bill for printing.")}
+}
+async function shareBill(){
+ try{
+  const transaction=currentBill(),customer=customers.find(item=>item.id===transaction.customerId);
+  const file=new File([invoiceDocument(transaction)],`${billNumber(transaction)}.html`,{type:"text/html"});
+  if(navigator.share&&navigator.canShare?.({files:[file]})){
+   await navigator.share({title:`Bill ${billNumber(transaction)}`,text:`Sales receipt from ${billProfile.name} for ${customer?.name||"your purchase"}.`,files:[file]});
+   return;
+  }
+  const items=billItems(transaction).map(item=>`${item.name}${item.quantity===null?"":` × ${item.quantity}`}: ${money(item.total)}`).join("\n");
+  const paid=Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount)),balance=unpaidAmount(transaction);
+  const message=`Hello${customer?.name?` ${customer.name}`:""}, here is your sales bill from ${billProfile.name}.${billProfile.phone?`\nBusiness phone: ${billProfile.phone}`:""}\nBill: ${billNumber(transaction)}\nDate: ${displayDate(transaction.date)}\n${items}\nTotal: ${money(transaction.amount)}\nPaid: ${money(paid)}\nBalance due: ${money(balance)}`;
+  if(navigator.share){
+   await navigator.share({title:`Bill ${billNumber(transaction)}`,text:message});
+   return;
+  }
+  const phone=customer?.phone?.replace(/\D/g,"")||"";
+  const link=document.createElement("a");link.href=`https://wa.me/${phone}?text=${encodeURIComponent(message)}`;link.target="_blank";link.rel="noopener noreferrer";link.click();
+  if(phone)toast("WhatsApp opened with the bill summary. Download the bill file to attach the full customer copy.");
+  else toast("WhatsApp opened with the bill summary. Choose a recipient; download the file to send the full customer copy.");
+ }catch(error){
+  if(error?.name==="AbortError")return;
+  console.error("Unable to share the HisabAI bill:",error);toast("Could not share this bill. Download it and send the file to your customer.");
+ }
+}
+function billAction(action,id){
+ if(action==="view-bill"){openBill(id);return}
+ if(!tx.some(transaction=>transaction.id===id&&transaction.type==="Sale")){toast("This sale could not be found.");return}
+ if(action==="print-bill"){
+  openBill(id);
+  if(currentBillId)printBill();
+  return;
+ }
+ currentBillId=id;
+ if(action==="download-bill")downloadBill();
+ if(action==="share-bill")shareBill();
+}
+function clearBillFilters(){
+ ["billSearch","billFrom","billTo","billPaymentFilter"].forEach(id=>document.getElementById(id).value="");
+ renderBills();
+}
+function exportBillsCsv(){
+ const query=document.getElementById("billSearch").value.trim().toLowerCase();
+ const from=document.getElementById("billFrom").value,to=document.getElementById("billTo").value,payment=document.getElementById("billPaymentFilter").value;
+ const sales=tx.filter(transaction=>transaction.type==="Sale").filter(transaction=>{
+  const method=transaction.paymentMethod||transaction.payment||"—";
+  const searchable=`${billNumber(transaction)} ${customerName(transaction.customerId)} ${transaction.desc||""} ${transaction.amount} ${method}`.toLowerCase();
+  const paid=Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount));
+  const paymentMatches=!payment||(payment==="Partial"?unpaidAmount(transaction)>0&&paid>0:method===payment);
+  return(!query||searchable.includes(query))&&(!from||transaction.date>=from)&&(!to||transaction.date<=to)&&paymentMatches;
+ });
+ if(!sales.length){toast("There are no bills matching the current filters to export.");return}
+ const safeCell=value=>{let text=String(value??"");if(/^[=+\-@]/.test(text))text="'"+text;return`"${text.replace(/"/g,'""')}"`};
+ const records=[["Bill number","Date","Customer","Items","Payment","Total","Paid","Balance due"],...sales.map(transaction=>[
+  billNumber(transaction),transaction.date,customerName(transaction.customerId)||"Walk-in customer",
+  billItems(transaction).map(item=>`${item.name}${item.quantity===null?"":` x ${item.quantity}`}`).join("; "),
+  transaction.paymentMethod||transaction.payment||"—",transaction.amount,
+  transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount),unpaidAmount(transaction)
+ ])];
+ const blob=new Blob(["\uFEFF"+records.map(row=>row.map(safeCell).join(",")).join("\r\n")],{type:"text/csv;charset=utf-8"});
+ const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=`hisabai-bills-${todayISO()}.csv`;
+ document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ toast(`Exported ${sales.length} bill${sales.length===1?"":"s"}.`);
+}
+function reminderLink(customer,balance,dueDate){
+ if(!customer.phone||!customer.phone.replace(/\D/g,""))return"";
+ const text=`Hi ${customer.name}, a friendly reminder that your outstanding balance at ${billProfile.name} is ${money(balance)}${dueDate?` and was due on ${displayDate(dueDate)}`:""}. Thank you!`;
+ const phone=customer.phone.replace(/\D/g,"");
+ return`<a class="smallAction" href="https://wa.me/${encodeURIComponent(phone)}?text=${encodeURIComponent(text)}" target="_blank" rel="noopener noreferrer">WhatsApp reminder</a>`;
+}
+function renderTransactions(){
+ const rows=filteredTransactions();
+ document.getElementById("allBody").innerHTML=rows.length?rows.map(t=>transactionRow(t)).join(""):'<tr><td class="empty" colspan="7">No transactions match these filters.</td></tr>';
+}
+function renderCustomers(){
+ const rows=[...customers].sort((a,b)=>a.name.localeCompare(b.name));
+ document.getElementById("customerBody").innerHTML=rows.length?rows.map(c=>{
+  const balance=customerBalance(c.id),dueDate=balanceDueDate(c.id);
+  return`<tr><td><b>${escapeHtml(c.name)}</b></td><td>${escapeHtml(c.phone||"—")}</td><td>${money(balance)}</td><td>${balance>0?displayDate(dueDate):"—"}</td><td><div class="actions">${balance>0?`<button class="smallAction" data-action="record-payment" data-id="${escapeHtml(c.id)}">Record payment</button>${reminderLink(c,balance,dueDate)}`:""}<button class="smallAction" data-action="edit-customer" data-id="${escapeHtml(c.id)}">Edit</button><button class="dangerAction" data-action="delete-customer" data-id="${escapeHtml(c.id)}">Delete</button></div></td></tr>`;
+ }).join(""):'<tr><td class="empty" colspan="5">Add your first customer using the form above.</td></tr>';
+ fillCustomerSelect("voiceCustomer");fillCustomerSelect("modalCustomer");fillCustomerSelect("saleCustomer");
+}
+function productStatus(product){
+ if(Number(product.stock)<=0)return{label:"Out of stock",className:"stockOut"};
+ if(Number(product.stock)<=Number(product.lowStock))return{label:"Low stock",className:"stockLow"};
+ return{label:"In stock",className:"stockReady"};
+}
+function renderProducts(){
+ const query=document.getElementById("productSearch").value.trim().toLowerCase();
+ const rows=[...products].filter(product=>`${product.name} ${product.sku||""} ${product.category||""}`.toLowerCase().includes(query)).sort((a,b)=>a.name.localeCompare(b.name));
+ document.getElementById("productBody").innerHTML=rows.length?rows.map(product=>{
+  const status=productStatus(product);
+  return`<tr><td><b>${escapeHtml(product.name)}</b></td><td>${escapeHtml(product.sku||"—")}</td><td>${escapeHtml(product.category||"—")}</td><td>${money(product.price)}</td><td>${money(product.cost)}</td><td>${Number(product.stock).toLocaleString("en-IN")}</td><td><span class="stockBadge ${status.className}">${status.label}</span></td><td><div class="actions"><button class="smallAction" data-action="edit-product" data-id="${escapeHtml(product.id)}">Edit</button><button class="dangerAction" data-action="delete-product" data-id="${escapeHtml(product.id)}">Delete</button></div></td></tr>`;
+ }).join(""):'<tr><td class="empty" colspan="8">No products found. Add products above to start recording itemized sales.</td></tr>';
+ const low=products.filter(product=>Number(product.stock)<=Number(product.lowStock));
+ document.getElementById("productCount").textContent=products.length;
+ document.getElementById("stockValue").textContent=money(products.reduce((sum,product)=>sum+Number(product.cost)*Number(product.stock),0));
+ document.getElementById("lowStockCount").textContent=low.length;
+ document.getElementById("outOfStockCount").textContent=products.filter(product=>Number(product.stock)<=0).length;
+ const inventory=document.getElementById("dashboardStock");
+ inventory.innerHTML=low.length?low.slice(0,5).map(product=>`<div class="stockAlertRow"><span><b>${escapeHtml(product.name)}</b><small>${escapeHtml(product.sku||product.category||"")}</small></span><span class="stockBadge ${Number(product.stock)<=0?"stockOut":"stockLow"}">${Number(product.stock)<=0?"Out of stock":`${Number(product.stock).toLocaleString("en-IN")} left`}</span></div>`).join(""):'<div class="empty">All products are above their low-stock levels.</div>';
+}
+function renderDueItems(containerId,limit=Infinity){
+ const due=creditCustomers().sort((a,b)=>(a.dueDate||"9999").localeCompare(b.dueDate||"9999")).slice(0,limit);
+ const container=document.getElementById(containerId);
+ container.innerHTML=due.length?due.map(({customer,balance,dueDate})=>{
+  const status=statusForDue(dueDate);
+  return`<div class="dueRow"><div><b>${escapeHtml(customer.name)}</b><div class="subtitle ${status.className}">${status.label}</div></div><strong>${money(balance)}</strong><div class="actions"><button class="smallAction" data-action="record-payment" data-id="${escapeHtml(customer.id)}">Record payment</button>${reminderLink(customer,balance,dueDate)}</div></div>`;
+ }).join(""):'<div class="empty">No customer balances are due. You are all caught up!</div>';
+}
+function renderCredit(){
+ const balances=creditCustomers(),total=balances.reduce((sum,item)=>sum+item.balance,0);
+ const overdue=balances.filter(item=>item.dueDate&&item.dueDate<todayISO()).reduce((sum,item)=>sum+item.balance,0);
+ const soon=balances.filter(item=>item.dueDate&&item.dueDate>=todayISO()&&item.dueDate<=shiftDate(7)).reduce((sum,item)=>sum+item.balance,0);
+ document.getElementById("creditTotal").textContent=money(total);document.getElementById("overdueTotal").textContent=money(overdue);
+ document.getElementById("owingCount").textContent=balances.length;document.getElementById("dueSoonTotal").textContent=money(soon);
+ renderDueItems("dueList");
+}
+function render(){
+ renderCustomers();renderCredit();renderTransactions();renderProducts();renderBills();renderDueItems("dashboardDue",4);
+ const recent=[...tx].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,5);
+ document.getElementById("recentBody").innerHTML=recent.length?recent.map(t=>`<tr><td>${displayDate(t.date)}</td><td><b>${escapeHtml(t.desc)}</b></td><td><span class="pill ${t.type==="Sale"?"sale":t.type==="Expense"?"expense":"credit"}">${escapeHtml(t.type)}</span></td><td>${escapeHtml(t.payment||"—")}</td><td><b>${money(t.amount)}</b></td></tr>`).join(""):'<tr><td class="empty" colspan="5">No transactions yet.</td></tr>';
+ const sales=tx.filter(t=>t.type==="Sale").reduce((sum,t)=>sum+Number(t.amount),0);
+ const expenses=tx.filter(t=>t.type==="Expense").reduce((sum,t)=>sum+Number(t.amount),0);
+ const credit=creditCustomers().reduce((sum,item)=>sum+item.balance,0);
+ const todaySales=tx.filter(t=>t.type==="Sale"&&t.date===todayISO()).reduce((sum,t)=>sum+Number(t.amount),0);
+ const todayEntries=tx.filter(t=>t.date===todayISO()).length;
+ document.getElementById("salesMetric").textContent=money(todaySales);document.getElementById("expenseMetric").textContent=money(expenses);
+ document.getElementById("creditMetric").textContent=money(credit);document.getElementById("customerCount").textContent=`${customers.length} customers`;
+ document.getElementById("countMetric").textContent=todayEntries;
+ document.getElementById("reportSales").textContent=money(sales);document.getElementById("reportExpenses").textContent=money(expenses);
+ document.getElementById("netReport").innerHTML=`${money(sales-expenses)} <small class="subtitle">net movement</small>`;
+ const max=Math.max(sales,expenses,1);document.getElementById("salesBar").style.width=`${Math.round(sales/max*100)}%`;document.getElementById("expenseBar").style.width=`${Math.round(expenses/max*100)}%`;
+ const paymentSales=tx.filter(t=>t.type==="Sale"),paymentTotal=paymentSales.reduce((sum,t)=>sum+Number(t.paidAmount??(t.payment==="Credit"?0:t.amount)),0);
+ const paymentGroups=[paymentSales.filter(t=>(t.paymentMethod||t.payment)==="Cash").reduce((sum,t)=>sum+Number(t.paidAmount??(t.payment==="Credit"?0:t.amount)),0),paymentSales.filter(t=>(t.paymentMethod||t.payment)==="UPI").reduce((sum,t)=>sum+Number(t.paidAmount??(t.payment==="Credit"?0:t.amount)),0),paymentSales.filter(t=>!["Cash","UPI","Credit"].includes(t.paymentMethod||t.payment)).reduce((sum,t)=>sum+Number(t.paidAmount??(t.payment==="Credit"?0:t.amount)),0)];
+ [["cashPercent","cashBar"],["upiPercent","upiBar"],["otherPercent","otherBar"]].forEach(([labelId,barId],index)=>{
+  const percent=paymentTotal?Math.round(paymentGroups[index]/paymentTotal*100):0;
+  document.getElementById(labelId).textContent=`${percent}%`;document.getElementById(barId).style.width=`${percent}%`;
+ });
+}
+function showPage(id,btn){
+ document.querySelectorAll(".page").forEach(page=>page.classList.remove("active"));
+ document.getElementById(id).classList.add("active");
+ document.querySelectorAll(".nav button,.mobileNav button").forEach(button=>button.classList.remove("active"));
+ if(btn)btn.classList.add("active");
+ document.querySelectorAll(".nav button,.mobileNav button").forEach(button=>{if(button.getAttribute("onclick")?.includes(`'${id}'`))button.classList.add("active")});
+ document.getElementById("pageTitle").textContent=pageTitles[id];
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function toggleCreditFields(){
+ const isCredit=document.getElementById("type").value==="Credit";
+ document.getElementById("voiceCreditFields").hidden=!isCredit;
+ if(isCredit){document.getElementById("payment").value="Credit";if(!document.getElementById("voiceDueDate").value)document.getElementById("voiceDueDate").value=shiftDate(7)}
+}
+function parseVoiceEntry(transcript){
+ const amountMatch=transcript.match(/(?:₹|rs\.?\s*)?(\d[\d,]*(?:\.\d{1,2})?)/i);
+ if(!amountMatch)return false;
+ const amount=Number(amountMatch[1].replaceAll(",",""));
+ if(!Number.isFinite(amount)||amount<=0)return false;
+ const lower=transcript.toLowerCase();
+ const type=/\b(udhaar|credit|on account|owe(?:s|d)?)\b/.test(lower)?"Credit":/\b(spent|expense|bought|purchase)\b/.test(lower)?"Expense":"Sale";
+ const payment=type==="Credit"?"Credit":/\bupi\b/.test(lower)?"UPI":/\bbank\b/.test(lower)?"Bank":"Cash";
+ document.getElementById("type").value=type;
+ document.getElementById("amount").value=amount;
+ document.getElementById("payment").value=payment;
+ document.getElementById("note").value=transcript.trim();
+ if(type==="Credit"){
+  const customer=customers.find(item=>lower.includes(item.name.toLowerCase()));
+  document.getElementById("voiceCustomer").value=customer?.id||"";
+ }
+ toggleCreditFields();
+ document.getElementById("voiceEntryStatus").textContent="REVIEW BEFORE SAVING";
+ return true;
+}
+function applyVoiceTranscript(transcript){
+ const clean=transcript.trim();
+ document.getElementById("transcript").textContent=`“${clean}”`;
+ if(parseVoiceEntry(clean)){
+  document.getElementById("listenText").innerHTML="<b>Entry ready ✓</b><br><small class='subtitle'>Check the amount and details, then confirm</small>";
+  toast("Voice entry filled in. Review it before saving.");
+ }else{
+  document.getElementById("amount").value="";
+  document.getElementById("note").value=clean;
+  document.getElementById("voiceEntryStatus").textContent="TRANSCRIPT READY";
+  document.getElementById("listenText").innerHTML="<b>Transcript ready ✓</b><br><small class='subtitle'>Your words are in the note. Add an amount to save this transaction.</small>";
+  toast("Transcript added. Enter the transaction amount before saving.");
+ }
+}
+function startVoiceEntry(){
+ if(voiceRecognition){
+  voiceRecognition.stop();
+  return;
+ }
+ const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!SpeechRecognition){
+  toast("Voice typing isn't supported in this browser. Try Chrome or Edge, or use the sample button.");
+  return;
+ }
+ if(!window.isSecureContext){
+  toast("Microphone access needs a secure page (HTTPS or localhost).");
+  return;
+ }
+ const mic=document.getElementById("mic"),text=document.getElementById("listenText");
+ const recognition=new SpeechRecognition();
+ voiceRecognition=recognition;
+ let latestTranscript="";
+ recognition.lang="en-IN";
+ recognition.continuous=true;
+ recognition.interimResults=true;
+ recognition.maxAlternatives=1;
+ mic.classList.add("listening");
+ mic.textContent="■";
+ mic.setAttribute("aria-label","Stop voice typing");
+ text.innerHTML="<b>Listening to your default microphone…</b><br><small class='subtitle'>Speak naturally. Tap the microphone again to stop.</small>";
+ document.getElementById("transcript").textContent="Listening…";
+ document.getElementById("note").value="";
+ recognition.onresult=event=>{
+  const parts=[];
+  for(let index=0;index<event.results.length;index++){
+   parts.push(event.results[index][0].transcript.trim());
+  }
+  const liveTranscript=parts.join(" ").replace(/\s+([,.!?])/g,"$1");
+  latestTranscript=liveTranscript;
+  document.getElementById("transcript").textContent=liveTranscript||"Listening…";
+  document.getElementById("note").value=liveTranscript;
+  document.getElementById("voiceEntryStatus").textContent="DICTATING";
+ };
+ recognition.onerror=event=>{
+  const message=event.error==="not-allowed"?"Microphone access was blocked. Allow microphone access in your browser settings and try again.":event.error==="no-speech"?"I didn't hear anything. Tap the microphone and speak again.":`Voice typing failed (${event.error}). Check your microphone and try again.`;
+  text.innerHTML="<b>Voice typing stopped</b><br><small class='subtitle'>Check the transcript or try again</small>";
+  if(event.error!=="no-speech")toast(message);
+ };
+ recognition.onend=()=>{
+  if(voiceRecognition!==recognition)return;
+  voiceRecognition=null;
+  mic.classList.remove("listening");
+  mic.textContent="🎙";
+  mic.setAttribute("aria-label","Start voice entry");
+  const transcript=latestTranscript.trim()||document.getElementById("note").value.trim();
+  if(transcript)applyVoiceTranscript(transcript);
+  else{
+   text.innerHTML="<b>No speech captured</b><br><small class='subtitle'>Tap the microphone and try again</small>";
+   document.getElementById("voiceEntryStatus").textContent="READY TO REVIEW";
+  }
+ };
+ try{recognition.start()}
+ catch(error){
+  voiceRecognition=null;mic.classList.remove("listening");mic.textContent="🎙";mic.setAttribute("aria-label","Start voice entry");
+  console.error("Unable to start voice entry:",error);
+  text.innerHTML="<b>Could not start listening</b><br><small class='subtitle'>Try again or load the example</small>";
+  toast("Could not start microphone. Check browser permissions and try again.");
+ }
+}
+function runSampleTransaction(){
+ if(voiceRecognition){
+  const recognition=voiceRecognition;
+  voiceRecognition=null;
+  recognition.stop();
+  document.getElementById("mic").classList.remove("listening");
+  document.getElementById("mic").textContent="🎙";
+  document.getElementById("mic").setAttribute("aria-label","Start voice entry");
+ }
+ const sample="I sold 2,000 rupees in cash.";
+ document.getElementById("listenText").innerHTML="<b>Sample ready ✓</b><br><small class='subtitle'>Review the example before saving</small>";
+ applyVoiceTranscript(sample);
+ toast("Sample filled in. Review before saving.");
+}
+document.getElementById("mic").addEventListener("click",startVoiceEntry);
+async function saveEntry(){
+ const amount=Number(document.getElementById("amount").value),type=document.getElementById("type").value;
+ const customerId=type==="Credit"?document.getElementById("voiceCustomer").value:"";
+ const dueDate=type==="Credit"?document.getElementById("voiceDueDate").value:"";
+ if(!Number.isFinite(amount)||amount<=0){toast("Enter an amount greater than zero.");return}
+ if(type==="Credit"&&!customerId){toast("Select a customer for this credit entry.");return}
+ if(type==="Credit"&&!dueDate){toast("Set a payment due date for this credit entry.");return}
+ tx.unshift({id:uid(),date:todayISO(),desc:document.getElementById("note").value.trim()||"New transaction",type,payment:type==="Credit"?"Credit":document.getElementById("payment").value,amount,customerId,dueDate});
+ const saved=await persist();render();if(saved)toast("Transaction saved.");
+ showPage(type==="Credit"?"credit":"transactions");
+}
+function resetProductForm(){
+ editingProductId="";document.getElementById("productForm").reset();document.getElementById("productCost").value="0";document.getElementById("productStock").value="0";document.getElementById("productLowStock").value="5";
+ document.getElementById("productFormTitle").textContent="Add a product";document.getElementById("productSubmit").textContent="Add product";document.getElementById("cancelProductEdit").hidden=true;
+}
+document.getElementById("productForm").addEventListener("submit",async event=>{
+ event.preventDefault();
+ const name=document.getElementById("productName").value.trim(),sku=document.getElementById("productSku").value.trim(),category=document.getElementById("productCategory").value.trim();
+ const price=Number(document.getElementById("productPrice").value),cost=Number(document.getElementById("productCost").value),stock=Number(document.getElementById("productStock").value),lowStock=Number(document.getElementById("productLowStock").value);
+ if(!name||!Number.isFinite(price)||price<=0||!Number.isFinite(cost)||cost<0||!Number.isFinite(stock)||stock<0||!Number.isFinite(lowStock)||lowStock<0){toast("Enter a name, valid prices, and non-negative stock values.");return}
+ if(sku&&products.some(product=>product.id!==editingProductId&&String(product.sku||"").toLowerCase()===sku.toLowerCase())){toast("That SKU or barcode is already in use.");return}
+ const product={id:editingProductId||uid(),name,sku,category,price,cost,stock,lowStock};
+ if(editingProductId&&!products.some(item=>item.id===editingProductId)){toast("Product could not be found.");return}
+ products=editingProductId?products.map(item=>item.id===editingProductId?product:item):[...products,product];
+ const saved=await persist();resetProductForm();render();if(saved)toast("Product saved.");
+});
+function editProduct(id){
+ const product=products.find(item=>item.id===id);if(!product){toast("Product could not be found.");return}
+ editingProductId=id;document.getElementById("productName").value=product.name;document.getElementById("productSku").value=product.sku||"";
+ document.getElementById("productCategory").value=product.category||"";document.getElementById("productPrice").value=product.price;document.getElementById("productCost").value=product.cost;
+ document.getElementById("productStock").value=product.stock;document.getElementById("productLowStock").value=product.lowStock;
+ document.getElementById("productFormTitle").textContent="Edit product";document.getElementById("productSubmit").textContent="Save changes";document.getElementById("cancelProductEdit").hidden=false;
+ document.getElementById("productName").focus();window.scrollTo({top:0,behavior:"smooth"});
+}
+async function deleteProduct(id){
+ const product=products.find(item=>item.id===id);if(!product){toast("Product could not be found.");return}
+ if(tx.some(transaction=>transaction.lineItems?.some(item=>item.productId===id))){toast("This product is in a sale record and cannot be deleted.");return}
+ if(!confirm(`Delete ${product.name} from your catalog?`))return;
+ products=products.filter(item=>item.id!==id);const saved=await persist();render();if(saved)toast("Product deleted.");
+}
+function saleLineRow(){
+ const options=products.map(product=>`<option value="${escapeHtml(product.id)}" ${Number(product.stock)<=0?"disabled":""}>${escapeHtml(product.name)} · ${money(product.price)} · ${Number(product.stock).toLocaleString("en-IN")} in stock</option>`).join("");
+ const row=document.createElement("div");row.className="saleItemRow";
+ row.innerHTML=`<select class="saleProduct" aria-label="Product"><option value="">Choose a product</option>${options}</select><input class="saleQuantity" type="number" min="0.01" step="0.01" value="1" aria-label="Quantity"><span class="saleLineTotal">${money(0)}</span><button class="dangerAction saleRemove" type="button" aria-label="Remove item">×</button>`;
+ row.querySelector(".saleProduct").addEventListener("change",updateSaleTotals);
+ row.querySelector(".saleQuantity").addEventListener("input",updateSaleTotals);
+ row.querySelector(".saleRemove").addEventListener("click",()=>{row.remove();if(!document.querySelector(".saleItemRow"))saleLineRow();updateSaleTotals()});
+ document.getElementById("saleItems").appendChild(row);
+ return row;
+}
+function saleSubtotal(){
+ return [...document.querySelectorAll(".saleItemRow")].reduce((sum,row)=>{
+  const product=products.find(item=>item.id===row.querySelector(".saleProduct").value),quantity=Number(row.querySelector(".saleQuantity").value);
+  return product&&Number.isFinite(quantity)&&quantity>0?sum+Number(product.price)*quantity:sum;
+ },0);
+}
+function updateSaleTotals(){
+ const subtotal=Math.round(saleSubtotal()*100)/100,paidField=document.getElementById("salePaid");
+ if(paidField.dataset.autoPaid==="true")paidField.value=document.getElementById("salePayment").value==="Credit"?"0":subtotal.toFixed(2);
+ const paid=Math.max(0,Number(paidField.value)||0);
+ document.getElementById("saleSubtotal").textContent=money(subtotal);document.getElementById("saleBalance").textContent=money(Math.max(0,subtotal-paid));
+ document.querySelectorAll(".saleItemRow").forEach(row=>{
+  const product=products.find(item=>item.id===row.querySelector(".saleProduct").value),quantity=Number(row.querySelector(".saleQuantity").value);
+  row.querySelector(".saleLineTotal").textContent=money(product&&quantity>0?Number(product.price)*quantity:0);
+ });
+}
+function openSaleModal(){
+ if(!products.length){toast("Add products to your catalog before recording an itemized sale.");showPage("inventory");return}
+ document.getElementById("saleForm").reset();document.getElementById("saleDate").value=todayISO();document.getElementById("salePaid").dataset.autoPaid="true";
+ document.getElementById("saleFeedback").textContent="";document.getElementById("saleItems").replaceChildren();fillCustomerSelect("saleCustomer");
+ saleLineRow();document.getElementById("saleModal").hidden=false;updateSaleTotals();document.querySelector(".saleProduct").focus();
+}
+function closeSaleModal(){document.getElementById("saleModal").hidden=true}
+document.getElementById("addSaleItem").addEventListener("click",()=>{saleLineRow();updateSaleTotals()});
+document.getElementById("saleItems").addEventListener("input",updateSaleTotals);
+document.getElementById("salePayment").addEventListener("change",()=>{
+ document.getElementById("salePaid").dataset.autoPaid="true";
+ updateSaleTotals();
+});
+document.getElementById("salePaid").addEventListener("input",()=>{document.getElementById("salePaid").dataset.autoPaid="false";updateSaleTotals()});
+document.getElementById("saleForm").addEventListener("submit",async event=>{
+ event.preventDefault();
+ const lines=[...document.querySelectorAll(".saleItemRow")].map(row=>{
+  const product=products.find(item=>item.id===row.querySelector(".saleProduct").value),quantity=Number(row.querySelector(".saleQuantity").value);
+  return product&&Number.isFinite(quantity)&&quantity>0?{product,quantity}:null;
+ });
+ if(!lines.length||lines.some(item=>!item)){document.getElementById("saleFeedback").textContent="Choose a product and enter a valid quantity for every line.";return}
+ const required=new Map();lines.forEach(({product,quantity})=>required.set(product.id,(required.get(product.id)||0)+quantity));
+ for(const [id,quantity] of required){const product=products.find(item=>item.id===id);if(quantity>Number(product.stock)){document.getElementById("saleFeedback").textContent=`Only ${Number(product.stock).toLocaleString("en-IN")} ${product.name} in stock.`;return}}
+ const amount=Math.round(lines.reduce((sum,{product,quantity})=>sum+Number(product.price)*quantity,0)*100)/100;
+ const paidAmount=Math.round(Number(document.getElementById("salePaid").value)*100)/100,customerId=document.getElementById("saleCustomer").value;
+ if(!Number.isFinite(paidAmount)||paidAmount<0||paidAmount>amount){document.getElementById("saleFeedback").textContent="Paid amount must be between zero and the sale total.";return}
+ const dueAmount=Math.round((amount-paidAmount)*100)/100,dueDate=document.getElementById("saleDueDate").value;
+ if(dueAmount>0&&!customerId){document.getElementById("saleFeedback").textContent="Choose a customer when any amount is left due.";return}
+ if(dueAmount>0&&!dueDate){document.getElementById("saleFeedback").textContent="Set a due date for the remaining balance.";return}
+ const lineItems=lines.map(({product,quantity})=>({productId:product.id,name:product.name,quantity,unitPrice:Number(product.price),lineTotal:Math.round(product.price*quantity*100)/100}));
+ const paymentMethod=document.getElementById("salePayment").value;
+ const record={id:uid(),date:document.getElementById("saleDate").value,desc:document.getElementById("saleNote").value.trim()||"Itemized sale",type:"Sale",payment:dueAmount===amount?"Credit":dueAmount>0?"Partial":paymentMethod,paymentMethod,paidAmount,amount,customerId,dueDate:dueAmount>0?dueDate:"",lineItems};
+ if(!record.date){document.getElementById("saleFeedback").textContent="Choose a valid sale date.";return}
+ tx=[record,...tx];products=products.map(product=>required.has(product.id)?{...product,stock:Number(product.stock)-required.get(product.id)}:product);
+ const saved=await persist();closeSaleModal();render();
+ if(saved){showPage("bills");openBill(record.id);toast("Sale saved. Your digital bill is ready.")}
+});
+function resetCustomerForm(){
+ editingCustomerId="";document.getElementById("customerForm").reset();document.getElementById("customerFormTitle").textContent="Add a customer";
+ document.getElementById("customerSubmit").textContent="Add customer";document.getElementById("cancelCustomerEdit").hidden=true;
+}
+document.getElementById("customerForm").addEventListener("submit",async event=>{
+ event.preventDefault();
+ const name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim();
+ if(!name){toast("Enter a customer name.");return}
+ if(editingCustomerId){const customer=customers.find(c=>c.id===editingCustomerId);if(!customer){toast("Customer could not be found.");return}customer.name=name;customer.phone=phone}
+ else customers.push({id:uid(),name,phone});
+ const saved=await persist();resetCustomerForm();render();if(saved)toast("Customer saved.");
+});
+function editCustomer(id){
+ const customer=customers.find(c=>c.id===id);if(!customer){toast("Customer could not be found.");return}
+ editingCustomerId=id;document.getElementById("customerName").value=customer.name;document.getElementById("customerPhone").value=customer.phone||"";
+ document.getElementById("customerFormTitle").textContent="Edit customer";document.getElementById("customerSubmit").textContent="Save changes";document.getElementById("cancelCustomerEdit").hidden=false;
+ document.getElementById("customerName").focus();window.scrollTo({top:0,behavior:"smooth"});
+}
+async function deleteCustomer(id){
+ const customer=customers.find(c=>c.id===id);if(!customer){toast("Customer could not be found.");return}
+ if(tx.some(t=>t.customerId===id)){toast("This customer has ledger entries and cannot be deleted.");return}
+ if(!confirm(`Delete ${customer.name}?`))return;
+ customers=customers.filter(c=>c.id!==id);const saved=await persist();render();if(saved)toast("Customer deleted.");
+}
+function openTransactionModal(transaction=null,customer=null){
+ if(transaction?.lineItems){toast("Itemized sales cannot be edited here. Delete the sale to restore stock, then create it again.");return}
+ editingTransactionId=transaction?.id||"";
+ document.getElementById("transactionModalTitle").textContent=transaction?"Edit transaction":`Record payment${customer?` · ${customer.name}`:""}`;
+ document.getElementById("modalType").value=transaction?.type||"Payment";document.getElementById("modalAmount").value=transaction?.amount||"";
+ document.getElementById("modalDate").value=transaction?.date||todayISO();document.getElementById("modalPayment").value=transaction?.payment||"Cash";
+ document.getElementById("modalDesc").value=transaction?.desc||(customer?`Payment from ${customer.name}`:"Customer payment");
+ fillCustomerSelect("modalCustomer");document.getElementById("modalCustomer").value=transaction?.customerId||customer?.id||"";
+ document.getElementById("modalDueDate").value=transaction?.dueDate||"";
+ document.getElementById("modalCustomerFields").hidden=!["Credit","Payment"].includes(document.getElementById("modalType").value);
+ document.getElementById("modalDueField").hidden=document.getElementById("modalType").value!=="Credit";
+ document.getElementById("transactionModal").hidden=false;document.getElementById("modalAmount").focus();
+}
+function closeTransactionModal(){document.getElementById("transactionModal").hidden=true;editingTransactionId=""}
+async function saveModalTransaction(event){
+ event.preventDefault();
+ const type=document.getElementById("modalType").value,amount=Number(document.getElementById("modalAmount").value),customerId=["Credit","Payment"].includes(type)?document.getElementById("modalCustomer").value:"";
+ const dueDate=type==="Credit"?document.getElementById("modalDueDate").value:"";
+ if(!Number.isFinite(amount)||amount<=0){toast("Enter an amount greater than zero.");return}
+ if(["Credit","Payment"].includes(type)&&!customerId){toast("Select the customer for this ledger entry.");return}
+ if(type==="Credit"&&!dueDate){toast("Set a payment due date for this credit entry.");return}
+ const record={id:editingTransactionId||uid(),date:document.getElementById("modalDate").value,desc:document.getElementById("modalDesc").value.trim(),type,payment:type==="Credit"?"Credit":document.getElementById("modalPayment").value,amount,customerId,dueDate};
+ if(!record.date||!record.desc){toast("Complete the date and description.");return}
+ if(editingTransactionId&&!tx.some(t=>t.id===editingTransactionId)){toast("Transaction could not be found.");return}
+ const candidate=editingTransactionId?tx.map(t=>t.id===editingTransactionId?record:t):[record,...tx];
+ if(!ledgerIsValid(candidate)){toast("This change would make the customer balance negative. Check recorded payments.");return}
+ tx=candidate;
+ const saved=await persist();closeTransactionModal();render();if(saved)toast("Transaction saved.");
+}
+function editTransaction(id){const transaction=tx.find(t=>t.id===id);if(!transaction){toast("Transaction could not be found.");return}openTransactionModal(transaction)}
+async function deleteTransaction(id){
+ const transaction=tx.find(t=>t.id===id);if(!transaction){toast("Transaction could not be found.");return}
+ if(!confirm(`Delete “${transaction.desc}” (${money(transaction.amount)})?`))return;
+ const candidate=tx.filter(t=>t.id!==id);
+ if(!ledgerIsValid(candidate)){toast("This entry cannot be deleted because recorded payments depend on it.");return}
+ tx=candidate;
+ if(transaction.lineItems)products=products.map(product=>{
+  const returned=transaction.lineItems.filter(item=>item.productId===product.id).reduce((sum,item)=>sum+Number(item.quantity),0);
+  return returned?{...product,stock:Number(product.stock)+returned}:product;
+ });
+ const saved=await persist();render();if(saved)toast(`Transaction deleted.${transaction.lineItems?" Stock restored.":""}`);
+}
+function recordPayment(customerId){
+ const customer=customers.find(c=>c.id===customerId);if(!customer){toast("Customer could not be found.");return}
+ if(customerBalance(customerId)<=0){toast("This customer has no outstanding balance.");return}
+ openTransactionModal(null,customer);
+}
+function clearFilters(){document.getElementById("txSearch").value="";document.getElementById("txType").value="";document.getElementById("txFrom").value="";document.getElementById("txTo").value="";renderTransactions()}
+function exportCsv(){
+ const rows=filteredTransactions();if(!rows.length){toast("There are no filtered transactions to export.");return}
+ const safeCell=value=>{let text=String(value??"");if(/^[=+\-@]/.test(text))text="'"+text;return`"${text.replace(/"/g,'""')}"`};
+ const records=[["Date","Description","Type","Customer","Payment","Amount","Due date"],...rows.map(t=>[t.date,t.desc,t.type,customerName(t.customerId),t.payment,t.amount,t.dueDate||""])];
+ const blob=new Blob(["\uFEFF"+records.map(row=>row.map(safeCell).join(",")).join("\r\n")],{type:"text/csv;charset=utf-8"});
+ const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=`hisabai-transactions-${todayISO()}.csv`;document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);
+ toast(`Exported ${rows.length} transaction${rows.length===1?"":"s"}.`);
+}
+function exportBackup(){
+ const data={app:"HisabAI",schemaVersion:1,exportedAt:new Date().toISOString(),transactions:tx,customers,products};
+ const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});
+ const url=URL.createObjectURL(blob),link=document.createElement("a");link.href=url;link.download=`hisabai-backup-${todayISO()}.json`;
+ document.body.appendChild(link);link.click();link.remove();URL.revokeObjectURL(url);toast("Browser data backup downloaded.");
+}
+function validBackup(data){
+ if(!data||data.app!=="HisabAI"||data.schemaVersion!==1||!Array.isArray(data.transactions)||!Array.isArray(data.customers)||!Array.isArray(data.products))return false;
+ const idsUnique=items=>new Set(items.map(item=>item?.id)).size===items.length&&items.every(item=>item&&typeof item.id==="string");
+ if(!idsUnique(data.customers)||data.customers.some(c=>typeof c.name!=="string"||typeof c.phone!=="string"))return false;
+ if(!idsUnique(data.products)||data.products.some(p=>typeof p.name!=="string"||!Number.isFinite(Number(p.price))||Number(p.price)<=0||!Number.isFinite(Number(p.cost))||Number(p.cost)<0||!Number.isFinite(Number(p.stock))||Number(p.stock)<0||!Number.isFinite(Number(p.lowStock))||Number(p.lowStock)<0))return false;
+ if(!idsUnique(data.transactions)||data.transactions.some(t=>!t||typeof t.desc!=="string"||!["Sale","Expense","Credit","Payment"].includes(t.type)||!Number.isFinite(Number(t.amount))||Number(t.amount)<=0||typeof t.date!=="string"))return false;
+ const productIds=new Set(data.products.map(p=>p.id)),customerIds=new Set(data.customers.map(c=>c.id));
+ for(const transaction of data.transactions){
+  if(["Credit","Payment"].includes(transaction.type)&&(!transaction.customerId||!customerIds.has(transaction.customerId)))return false;
+  if(transaction.type==="Sale"){
+   const paid=Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount));
+   if(!Number.isFinite(paid)||paid<0||paid>Number(transaction.amount))return false;
+   const unpaid=Math.max(0,Number(transaction.amount)-paid);
+   if(unpaid>0&&(!customerIds.has(transaction.customerId)||!transaction.dueDate))return false;
+  }
+  if(transaction.lineItems!==undefined){
+   if(!Array.isArray(transaction.lineItems)||transaction.lineItems.some(item=>!productIds.has(item.productId)||!Number.isFinite(Number(item.quantity))||Number(item.quantity)<=0||!Number.isFinite(Number(item.unitPrice))||Number(item.unitPrice)<0))return false;
+   const itemsTotal=transaction.lineItems.reduce((sum,item)=>sum+Number(item.quantity)*Number(item.unitPrice),0);
+   if(Math.abs(itemsTotal-Number(transaction.amount))>0.01)return false;
+  }
+ }
+ const balances=new Map(data.customers.map(customer=>[customer.id,0]));
+ for(const transaction of data.transactions){
+  if(!balances.has(transaction.customerId))continue;
+  const unpaid=transaction.type==="Credit"?Number(transaction.amount):transaction.type==="Sale"?Math.max(0,Number(transaction.amount)-Number(transaction.paidAmount??(transaction.payment==="Credit"?0:transaction.amount))):0;
+  balances.set(transaction.customerId,balances.get(transaction.customerId)+unpaid-(transaction.type==="Payment"?Number(transaction.amount):0));
+ }
+ return[...balances.values()].every(balance=>balance>=-0.009);
+}
+document.getElementById("backupFile").addEventListener("change",async event=>{
+ const file=event.currentTarget.files?.[0];event.currentTarget.value="";
+ if(!file)return;
+ try{
+  const data=JSON.parse(await file.text());
+  if(!validBackup(data)){toast("This backup is invalid or has inconsistent customer balances. No data was changed.");return}
+  if(!confirm("Restore this backup? It will replace the transactions, customers, and products saved in this browser."))return;
+  tx=data.transactions;customers=data.customers;products=data.products;
+  const saved=await persist();render();if(saved)toast("Backup restored.");
+ }catch(error){console.error("Unable to restore the HisabAI backup:",error);toast("Could not read this backup file. No data was changed.")}
+});
+document.getElementById("productBody").addEventListener("click",event=>{
+ const button=event.target.closest("button[data-action]");if(!button)return;
+ if(button.dataset.action==="edit-product")editProduct(button.dataset.id);
+ if(button.dataset.action==="delete-product")deleteProduct(button.dataset.id);
+});
+document.getElementById("productSearch").addEventListener("input",renderProducts);
+document.getElementById("saleModal").addEventListener("click",event=>{if(event.target.id==="saleModal")closeSaleModal()});
+document.getElementById("billModal").addEventListener("click",event=>{if(event.target.id==="billModal")closeBill()});
+document.getElementById("transactionForm").addEventListener("submit",saveModalTransaction);
+document.getElementById("modalType").addEventListener("change",()=>{
+ const type=document.getElementById("modalType").value;
+ document.getElementById("modalCustomerFields").hidden=!["Credit","Payment"].includes(type);document.getElementById("modalDueField").hidden=type!=="Credit";
+ if(type==="Credit")document.getElementById("modalPayment").value="Credit";
+});
+document.getElementById("allBody").addEventListener("click",event=>{
+ const button=event.target.closest("button[data-action]");if(!button)return;
+ const {action,id}=button.dataset;
+ if(action==="edit-tx")editTransaction(id);if(action==="delete-tx")deleteTransaction(id);
+ if(action==="view-bill")openBill(id);
+});
+["billBody","dashboardBills"].forEach(id=>document.getElementById(id).addEventListener("click",event=>{
+ const button=event.target.closest("button[data-action]");if(!button)return;
+ if(button.dataset.action==="view-bill")openBill(button.dataset.id);
+ else if(button.dataset.action.endsWith("-bill"))billAction(button.dataset.action,button.dataset.id);
+}));
+document.getElementById("customerBody").addEventListener("click",event=>{
+ const button=event.target.closest("button[data-action]");if(!button)return;
+ const {action,id}=button.dataset;
+ if(action==="record-payment")recordPayment(id);if(action==="edit-customer")editCustomer(id);if(action==="delete-customer")deleteCustomer(id);
+});
+["dueList","dashboardDue"].forEach(id=>document.getElementById(id).addEventListener("click",event=>{
+ const button=event.target.closest("button[data-action='record-payment']");if(button)recordPayment(button.dataset.id);
+}));
+["txSearch","txType","txFrom","txTo"].forEach(id=>document.getElementById(id).addEventListener("input",renderTransactions));
+["billSearch","billFrom","billTo","billPaymentFilter"].forEach(id=>document.getElementById(id).addEventListener("input",renderBills));
+document.getElementById("transactionModal").addEventListener("click",event=>{if(event.target.id==="transactionModal")closeTransactionModal()});
+document.addEventListener("keydown",event=>{
+ if(event.key==="Escape"&&!document.getElementById("transactionModal").hidden)closeTransactionModal();
+ if(event.key==="Escape"&&!document.getElementById("saleModal").hidden)closeSaleModal();
+ if(event.key==="Escape"&&!document.getElementById("billModal").hidden)closeBill();
+});
+let pendingSecondStep=null;
+function showSecondStep(context){
+ pendingSecondStep=context;
+ document.getElementById("secondStepPassword").value="";
+ document.getElementById("secondStepFeedback").textContent="";
+ document.getElementById("secondStepModal").hidden=false;
+ document.getElementById("secondStepPassword").focus();
+}
+function closeSecondStep(){
+ document.getElementById("secondStepModal").hidden=true;
+ document.getElementById("secondStepForm").reset();
+ document.getElementById("secondStepFeedback").textContent="";
+ pendingSecondStep=null;
+}
+function applyLoginIdentity(account){
+ const displayName=account?.name||"";
+ const initials=displayName.split(/\s+/).filter(Boolean).slice(0,2).map(part=>part[0].toUpperCase()).join("")||"RK";
+ document.querySelector(".profile b").textContent=displayName;
+ document.querySelector(".avatar").textContent=initials;
+}
+function createDemoData(){
+ const riceId=uid(),oilId=uid(),teaId=uid(),soapId=uid();
+ const customerA=uid(),customerB=uid(),customerC=uid();
+ customers=[
+  {id:customerA,name:"Asha — Demo customer",phone:""},
+  {id:customerB,name:"Imran — Demo customer",phone:""},
+  {id:customerC,name:"Meera — Demo customer",phone:""}
+ ];
+ products=[
+  {id:riceId,name:"Demo Basmati rice",sku:"DEMO-RICE",category:"Groceries",price:425,cost:340,stock:18,lowStock:8},
+  {id:oilId,name:"Demo cooking oil",sku:"DEMO-OIL",category:"Groceries",price:190,cost:155,stock:7,lowStock:10},
+  {id:teaId,name:"Demo tea pack",sku:"DEMO-TEA",category:"Beverages",price:145,cost:110,stock:32,lowStock:10},
+  {id:soapId,name:"Demo soap",sku:"DEMO-SOAP",category:"Household",price:55,cost:38,stock:24,lowStock:8}
+ ];
+ const demoSale=(date,description,productId,productName,quantity,unitPrice,payment,customerId="")=>{
+  const amount=quantity*unitPrice;
+  return{id:uid(),date,desc:description,type:"Sale",payment,paymentMethod:payment,amount,paidAmount:amount,customerId,dueDate:"",lineItems:[{productId,name:productName,quantity,unitPrice,lineTotal:amount}]};
+ };
+ tx=[
+  demoSale(todayISO(),"Demo sale — grocery order",riceId,"Demo Basmati rice",2,425,"Cash"),
+  {id:uid(),date:shiftDate(-1),desc:"Demo credit sale — household order",type:"Sale",payment:"Partial",paymentMethod:"UPI",amount:490,paidAmount:190,customerId:customerA,dueDate:shiftDate(5),lineItems:[{productId:oilId,name:"Demo cooking oil",quantity:2,unitPrice:190,lineTotal:380},{productId:soapId,name:"Demo soap",quantity:2,unitPrice:55,lineTotal:110}]},
+  demoSale(shiftDate(-2),"Demo sale — tea and groceries",teaId,"Demo tea pack",3,145,"UPI",customerB),
+  {id:uid(),date:shiftDate(-2),desc:"Demo shop supplies",type:"Expense",payment:"Cash",amount:620,customerId:"",dueDate:""},
+  {id:uid(),date:shiftDate(-3),desc:"Demo credit balance",type:"Credit",payment:"Credit",amount:850,customerId:customerC,dueDate:shiftDate(3)},
+  {id:uid(),date:shiftDate(-1),desc:"Demo customer payment",type:"Payment",payment:"Cash",amount:300,customerId:customerC,dueDate:""}
+ ];
+ isDemoData=true;
+}
+async function initializeDemoDataIfNeeded(account){
+ if(!account?.demoDataPending)return;
+ if(stateRevision===0&&!tx.length&&!customers.length&&!products.length){
+  createDemoData();
+  if(!await persist())return;
+ }
+ await HisabAIAuth.markDemoDataInitialized(account.identifier);
+}
+function readLegacyState(){
+ let raw;
+ try{raw=localStorage.getItem(LEGACY_STATE_KEY)}
+ catch(error){console.error("Unable to read the existing browser records:",error);throw new Error("Could not read your existing browser records. Check browser storage and try again.")}
+ if(!raw)return null;
+ let saved;
+ try{saved=JSON.parse(raw)}
+ catch(error){console.error("Existing browser records are not valid JSON:",error);throw new Error("Your existing browser records could not be read and were left unchanged.")}
+ const data={app:"HisabAI",schemaVersion:1,transactions:saved.tx,customers:saved.customers,products:saved.products||[]};
+ if(!validBackup(data))throw new Error("Your existing browser records have an invalid format and were left unchanged.");
+ return data;
+}
+async function importLegacyStateIfNeeded(){
+ if(stateRevision!==0||tx.length||customers.length||products.length)return false;
+ const data=readLegacyState();
+ if(!data||(!data.transactions.length&&!data.customers.length&&!data.products.length))return false;
+ if(!confirm("Import your existing browser records? This will replace the current empty business records in this browser account."))return false;
+ tx=data.transactions;customers=data.customers;products=data.products;
+ const saved=await persist();
+ if(saved){
+  try{localStorage.removeItem(LEGACY_STATE_KEY)}
+  catch(error){console.error("Unable to remove the imported browser records:",error);toast("Your records were imported, but the old browser copy could not be removed.")}
+ }
+ return saved;
+}
+async function enterApp(email,account){
+ let rememberLoginFailed=false;
+ try{
+  if(document.getElementById("rememberLogin").checked)localStorage.setItem("hisabai-remembered-login",email);
+  else localStorage.removeItem("hisabai-remembered-login");
+ }catch(error){
+  console.error("Unable to save the remembered HisabAI sign-in:",error);
+  rememberLoginFailed=true;
+ }
+ try{
+  await loadLocalState();
+ }catch(error){
+  console.error("Unable to load the browser's business records:",error);
+  document.getElementById("loginFeedback").textContent=`Could not load your business data: ${error.message}`;
+  return false;
+ }
+ try{await importLegacyStateIfNeeded();render()}
+ catch(error){console.error("Unable to import the existing browser records:",error);toast(error.message)}
+ try{await initializeDemoDataIfNeeded(account);render()}
+ catch(error){console.error("Unable to initialize HisabAI demo data:",error);toast(`Could not initialize demo data: ${error.message}`)}
+ applyLoginIdentity(account);
+ const twoStepEnabled=account.twoStepEnabled===true;
+ document.getElementById("twoStepEnabled").checked=twoStepEnabled;
+ updateTwoStepStatus(twoStepEnabled);
+ document.getElementById("loginFeedback").textContent="";
+ document.getElementById("loginScreen").hidden=true;
+ document.getElementById("mainApp").hidden=false;
+ document.querySelector(".mobileNav").hidden=false;
+ if(rememberLoginFailed)toast("Could not save your sign-in preference. Continuing without it.");
+ if(!DASHBOARD_PAGE){window.location.replace("dashboard.html");return true}
+ window.scrollTo({top:0,behavior:"instant"});
+ return true;
+}
+
+document.getElementById("loginForm").addEventListener("submit",async event=>{
+ event.preventDefault();
+ if(!event.currentTarget.reportValidity())return;
+ const email=document.getElementById("loginEmail").value.trim();
+ const pin=document.getElementById("loginPassword").value;
+ const submitButton=event.currentTarget.querySelector(".loginSubmit");
+ const feedback=document.getElementById("loginFeedback");
+ submitButton.disabled=true;
+ feedback.textContent="";
+ try{
+  const result=await localRequest("login",{body:JSON.stringify({identifier:email,pin})});
+  if(result.requires_password){
+   showSecondStep({mode:"local",email});
+  }else{
+   await enterApp(email,result.account);
+  }
+ }catch(error){
+  console.error("Unable to sign in to HisabAI:",error);
+  feedback.textContent=error.message||"Could not sign in.";
+ }finally{
+  submitButton.disabled=false;
+ }
+});
+document.getElementById("secondStepForm").addEventListener("submit",async event=>{
+ event.preventDefault();
+ if(!pendingSecondStep||!event.currentTarget.reportValidity())return;
+ const button=document.getElementById("verifySecondStep"),feedback=document.getElementById("secondStepFeedback");
+ button.disabled=true;
+ feedback.textContent="";
+ try{
+  const password=document.getElementById("secondStepPassword").value,context=pendingSecondStep;
+  const result=await localRequest("login-password",{body:JSON.stringify({identifier:context.email,password})});
+  closeSecondStep();
+  await enterApp(context.email,result.account);
+ }catch(error){
+  console.error("Unable to complete two-step sign-in:",error);
+  feedback.textContent=error.message||"Could not verify the password. Try again.";
+ }finally{button.disabled=false}
+});
+document.getElementById("cancelSecondStep").addEventListener("click",closeSecondStep);
+document.getElementById("cancelSecondStepButton").addEventListener("click",closeSecondStep);
+document.getElementById("secondStepModal").addEventListener("click",event=>{if(event.target.id==="secondStepModal")closeSecondStep()});
+document.addEventListener("keydown",event=>{if(event.key==="Escape"&&!document.getElementById("secondStepModal").hidden)closeSecondStep()});
+document.getElementById("passwordToggle").addEventListener("click",event=>{
+ const password=document.getElementById("loginPassword"),button=event.currentTarget;
+ const show=password.type==="password";
+ password.type=show?"text":"password";
+ button.textContent=show?"Hide":"Show";
+ button.setAttribute("aria-label",show?"Hide PIN":"Show PIN");
+ button.setAttribute("aria-pressed",String(show));
+});
+function updateTwoStepStatus(enabled){
+ document.getElementById("twoStepStatus").textContent=enabled?"Enabled · password required after PIN":"Disabled";
+}
+document.getElementById("twoStepEnabled").addEventListener("change",event=>{
+ const toggle=event.currentTarget;
+ const wasEnabled=!toggle.checked;
+ localRequest("account-security",{body:JSON.stringify({two_step_enabled:toggle.checked})}).then(()=>{
+  updateTwoStepStatus(toggle.checked);
+  toast(toggle.checked?"Two-step verification enabled.":"Two-step verification disabled.");
+ }).catch(error=>{
+  console.error("Unable to save the two-step verification setting:",error);
+  toggle.checked=wasEnabled;
+  updateTwoStepStatus(wasEnabled);
+  toast(`Could not save this security setting: ${error.message}`);
+ });
+});
+try{
+ const rememberedLogin=localStorage.getItem("hisabai-remembered-login");
+ if(rememberedLogin){
+  document.getElementById("loginEmail").value=rememberedLogin;
+  document.getElementById("rememberLogin").checked=true;
+ }
+}catch(error){
+ console.error("Unable to read the remembered HisabAI sign-in:",error);
+}
+async function logOut(){
+ try{await localRequest("logout")}
+ catch(error){console.error("Unable to sign out from HisabAI:",error);toast(`Could not sign out: ${error.message}`);return}
+ document.getElementById("mainApp").hidden=true;
+ document.querySelector(".mobileNav").hidden=true;
+ document.getElementById("loginScreen").hidden=false;
+ document.getElementById("loginForm").reset();
+ try{
+  const rememberedLogin=localStorage.getItem("hisabai-remembered-login");
+  if(rememberedLogin){
+   document.getElementById("loginEmail").value=rememberedLogin;
+   document.getElementById("rememberLogin").checked=true;
+  }
+ }catch(error){
+  console.error("Unable to restore the remembered HisabAI sign-in:",error);
+ }
+ document.getElementById("loginFeedback").textContent="";
+ closeSecondStep();
+ document.getElementById("loginPassword").value="";
+ window.scrollTo({top:0,behavior:"instant"});
+ document.getElementById("loginEmail").focus();
+}
+loadBillProfile();
+render();
+localRequest("session").then(async result=>{
+ await enterApp(result.account.identifier,result.account);
+}).catch(error=>{
+ if(DASHBOARD_PAGE&&error.status===401){window.location.replace("login.html");return}
+ if(error.status!==401){
+  console.error("Unable to restore the HisabAI session:",error);
+  document.getElementById("loginFeedback").textContent=error.message||"Could not restore the local sign-in.";
+ }
+});
+</script>
+</body>
+</html>

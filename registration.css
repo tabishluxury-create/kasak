@@ -1,0 +1,205 @@
+.registrationScreen{height:auto;min-height:100vh;align-content:center;padding:26px}
+.registrationScreen .loginShell{height:auto;min-height:min(900px,calc(100vh - 52px));grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr)}
+.registrationScreen .loginPanel{order:1;padding:28px 18px}
+.registrationScreen .loginIntro{order:2}
+.registrationCard{width:min(calc(100% - 20px),560px);height:auto;min-height:0;justify-content:center;padding:32px}
+.registrationCard:before{position:static;width:46%;margin:-32px auto 28px}
+.registrationFormVisual{position:absolute;z-index:2;top:0;left:50%;display:grid;width:28px;height:28px;place-items:center;margin-left:-14px;border:1px solid #8ed5a733;border-radius:10px;background:radial-gradient(circle at 50% 45%,#a3e5b612,transparent 70%),linear-gradient(145deg,#173326,#11231a);box-shadow:0 0 0 4px #8ed5a708,0 8px 20px #020a0757;transform:translateY(0);animation:registrationVisualFloat 5.2s ease-in-out 2}
+.registrationFormVisual>svg{position:relative;z-index:1;width:22px;height:22px;overflow:visible;filter:drop-shadow(0 0 6px #86d9a23d)}
+.registrationProfileHalo{fill:#8bd2aa0d;stroke:#8bd2aa3d;stroke-width:1.2;stroke-dasharray:3 4}
+.registrationProfileHead{fill:#a7edba;transform-box:fill-box;transform-origin:center;animation:registrationHeadPop .65s .22s cubic-bezier(.2,.8,.2,1.25) both}
+.registrationProfileBody{fill:#82d69c30;stroke:#a7edba;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:48;stroke-dashoffset:48;animation:registrationProfileDraw .8s .5s ease-out forwards}
+.registrationProfilePlus{fill:#2b704b;stroke:#a7edba;stroke-width:1.3;transform-box:fill-box;transform-origin:center;animation:registrationPlusPop .45s .95s cubic-bezier(.2,.8,.2,1.3) both}
+.registrationProfilePlusMark{fill:none;stroke:#e1f8e5;stroke-width:1.7;stroke-linecap:round;stroke-dasharray:16;stroke-dashoffset:16;animation:registrationProfileDraw .45s 1.25s ease-out forwards}
+.registrationOrbit{position:absolute;border:1px solid #9ee2b322;border-radius:50%;pointer-events:none}
+.registrationOrbitOne{inset:-7px}
+.registrationOrbitTwo{inset:4px;border-style:dashed;border-color:#9ee2b31d}
+.registrationVisualSpark{position:absolute;z-index:2;width:4px;height:4px;border-radius:50%;background:#c7f2cd;box-shadow:0 0 6px #a6ebba80}
+.registrationVisualSparkOne{top:7px;right:9px}
+.registrationVisualSparkTwo{bottom:11px;left:7px}
+.signinPrompt a:hover{text-decoration:underline}
+.registrationHeading p{margin:8px 0 0;color:#9aacc5;font-size:12px;line-height:1.5}
+.registrationForm{gap:13px}
+.registrationForm .field label{margin-bottom:6px}
+.registrationForm .field label small{margin-left:5px;color:#8398b4;font-size:10px;font-weight:500}
+.registrationForm .field input{min-height:47px;padding:11px 14px;font-size:13px}
+.registrationFeedback{display:none;margin:0;padding:10px 12px;border-radius:10px;font-size:12px;line-height:1.5}
+.registrationFeedback.success,.registrationFeedback.error{display:block}
+.registrationFeedback.success{border:1px solid #287b60;background:#12372f;color:#88f0c1}
+.registrationFeedback.error{border:1px solid #774351;background:#321d2a;color:#ffabb5}
+.registrationForm .loginSubmit{min-height:52px;margin-top:7px;padding:12px 18px}
+.registrationForm .loginSubmit:disabled{cursor:wait;opacity:.7;transform:none}
+.signinPrompt{margin:14px 0 0;color:#a7b8af;text-align:center;font-size:12px}
+.signinPrompt a{color:#8bd2aa;font-weight:800;text-decoration:none}
+.registrationBenefits{position:relative;z-index:1;display:grid;width:min(100%,540px);gap:7px;align-self:center;margin:auto 0;padding:19px 21px;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none}
+.registrationBenefits h2{margin:0;color:#e5f4e9;font-size:clamp(17px,2vw,22px);letter-spacing:-.035em;animation:registrationBenefitEnter .55s .08s both}
+.registrationBenefitsIntro{margin:0 0 3px;color:#a3baaa;font-size:11px;line-height:1.5;animation:registrationBenefitEnter .55s .14s both}
+.registrationBenefitList{display:grid;gap:6px}
+.registrationBenefit{display:grid;grid-template-columns:34px minmax(0,1fr) 16px;align-items:center;gap:11px;min-height:54px;padding:7px 9px;border:0;border-bottom:1px solid #a5d6af25;border-radius:0;background:transparent;transition:transform .25s ease,border-color .25s ease,background .25s ease;animation:registrationBenefitEnter .55s ease both}
+.registrationBenefit:nth-child(1){animation-delay:.18s}
+.registrationBenefit:nth-child(2){animation-delay:.27s}
+.registrationBenefit:nth-child(3){animation-delay:.36s}
+.registrationBenefit:hover{transform:translateX(4px);border-color:#8bd2aa58;background:#8bd2aa0a}
+.registrationBenefitIcon{display:grid;width:32px;height:32px;place-items:center;border:1px solid #8bd2aa25;border-radius:10px;background:#8bd2aa0c;color:#a2e6bd}
+.registrationBenefitIcon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.6}
+.registrationBenefit>span:nth-child(2){display:grid;gap:3px}
+.registrationBenefit strong{color:#dceddf;font-size:11px;font-weight:800}
+.registrationBenefit small{color:#93aa9a;font-size:9px;line-height:1.4}
+.registrationBenefitArrow{color:#76bc8e;font-size:14px;transition:transform .25s ease}
+.registrationBenefit:hover .registrationBenefitArrow{transform:translate(2px,-2px)}
+.registrationBenefitsNote{display:flex;align-items:center;gap:7px;margin:3px 0 0;color:#91ad99;font-size:9px;animation:registrationBenefitEnter .55s .43s both}
+.registrationBenefitsNote span{color:#a6e4b2}
+@keyframes registrationBenefitEnter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.recoveryNotice{margin:0;padding:10px 12px;border:1px solid #385249;border-radius:10px;background:#0f1c19;color:#a7b8af;font-size:11px;line-height:1.55}
+.recoveryPage .loginIntro>.loginIllustration{display:grid;flex:1;min-height:180px;margin:14px 0 0}
+.recoveryCard{position:relative;z-index:2;display:grid;width:min(100%,440px);justify-items:center;gap:4px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;text-align:center}
+.recoveryLockVisual{position:relative;display:grid;width:180px;height:150px;place-items:center}
+.recoveryLockVisual svg{width:100%;height:100%;overflow:visible}
+.recoveryLockGlow{fill:url(#recoveryLockGlow)}
+.recoveryLockOrbit{fill:none;stroke:#8bd2aa30;stroke-width:1;stroke-dasharray:2 7;animation:recoveryOrbitDraw 1.3s .15s ease-out both}
+.recoveryKeyTrail{fill:none;stroke:#8bd2aa9c;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:70;stroke-dashoffset:70;animation:recoveryTrailDraw .7s .35s ease-out both}
+.recoverySpark{fill:#b8f2c5;opacity:0;animation:recoverySparkIn .45s ease-out both}
+.recoverySparkOne{animation-delay:.25s}
+.recoverySparkTwo{animation-delay:.65s}
+.recoverySparkDot{fill:#8bd2aa;opacity:0;animation:recoverySparkIn .4s .8s ease-out both}
+.recoveryLockHalo{fill:#8bd2aa08;stroke:#8bd2aa2d;stroke-width:1.2;stroke-dasharray:3 5}
+.recoveryShackle{fill:none;stroke:#a7edba;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;transform-box:view-box;transform-origin:42px 47px;animation:recoveryUnlock .65s 1.65s cubic-bezier(.2,.8,.2,1) both}
+.recoveryLockBody{fill:url(#recoveryLockFill);stroke:#8bd2aa;stroke-width:2}
+.recoveryKeyhole{fill:#b8f2c5;stroke:#b8f2c5;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.recoveryKey{fill:none;stroke:#d1f5d9;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;transform:translateX(24px);opacity:0;animation:recoveryKeyTurn 1.1s .45s cubic-bezier(.2,.75,.25,1) both}
+@keyframes recoveryOrbitDraw{from{stroke-dashoffset:56;opacity:.25}to{stroke-dashoffset:0;opacity:1}}
+@keyframes recoveryTrailDraw{to{stroke-dashoffset:0}}
+@keyframes recoverySparkIn{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+@keyframes recoveryKeyTurn{0%{transform:translateX(24px);opacity:0}35%{opacity:1}75%{transform:translateX(-5px) rotate(0)}100%{transform:translateX(-5px) rotate(-8deg);opacity:1}}
+@keyframes recoveryUnlock{0%,35%{transform:rotate(0)}100%{transform:rotate(-22deg)}}
+.recoveryCard strong{margin-top:3px;color:#d7f0de;font-size:15px}
+.recoveryCard small{color:#9bb8a4;font-size:12px}
+.registrationForm .loginSubmit[hidden]{display:none}
+.registrationIllustration{isolation:isolate}
+.registrationIllustration:before{inset:5% 2% 0;border-color:#7edfff18}
+.signupHalo{position:absolute;z-index:-1;left:50%;top:52%;width:min(90%,440px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#48c9ee21 0, #457bda12 43%,transparent 70%);filter:blur(2px)}
+.signupSetupCard{position:relative;z-index:2;width:min(82%,390px);padding:15px 18px 13px;border:1px solid #8bbde04a;border-radius:19px;background:linear-gradient(150deg,#1a2b42f5,#101b2df5);box-shadow:0 25px 60px #020a1cb3,inset 0 1px 0 #ffffff18;animation:signupCardFloat 6.4s ease-in-out 2}
+.signupCardTop{display:flex;align-items:center;gap:9px;padding-bottom:10px;border-bottom:1px solid #90b5d41c;color:#91a9c3;font-size:8px;font-weight:850;letter-spacing:.13em}
+.signupWindowDots{display:flex;gap:4px}
+.signupWindowDots i{width:6px;height:6px;border-radius:50%;background:#5ce6ed}
+.signupWindowDots i:nth-child(2){background:#ffd166}.signupWindowDots i:nth-child(3){background:#ff8492}
+.signupCardMenu{margin-left:auto;color:#9ab0ca;font-size:11px;letter-spacing:.1em}
+.signupProfile{display:flex;align-items:center;gap:11px;padding:12px 0 10px}
+.signupAvatar{position:relative;display:grid;width:43px;height:43px;flex:none;place-items:center;border:1px solid #75dff078;border-radius:14px;background:linear-gradient(145deg,#234d72,#18344f);color:#8debf0}
+.signupAvatar svg{width:28px;height:28px;opacity:.8}
+.signupAvatar>span{position:absolute;right:-4px;bottom:-4px;display:grid;width:17px;height:17px;place-items:center;border:2px solid #142238;border-radius:50%;background:#5ce6ed;color:#09203a;font-size:12px;font-weight:900}
+.signupProfileCopy{display:grid;gap:4px;min-width:0}
+.signupProfileCopy strong{color:#e9f3ff;font-size:11px}
+.signupProfileCopy>span{color:#91a6c0;font-size:9px}
+.signupEditIcon{display:grid;width:26px;height:26px;margin-left:auto;place-items:center;border:1px solid #84b6d72b;border-radius:8px;color:#82cddd;font-size:13px}
+.signupFieldPreview{display:flex;align-items:center;justify-content:space-between;min-height:34px;margin-top:6px;padding:0 11px;border:1px solid #425771;border-radius:9px;background:linear-gradient(145deg,#0b1525,#101b2c)}
+.signupFieldPreview>span{color:#91a7c1;font-size:8px;font-weight:850;letter-spacing:.09em}
+.signupFieldPreview>i{display:block;width:40%;height:5px;border-radius:6px;background:#637c98;opacity:.55}
+.signupFieldPreview .signupPinDots{width:auto;height:auto;background:none;color:#6edfe5;font-size:11px;font-style:normal;letter-spacing:.22em;opacity:1}
+.signupProgress{display:grid;grid-template-columns:1fr auto;gap:8px 10px;margin-top:12px}
+.signupProgress>div:first-child{display:grid;gap:4px}
+.signupProgress>div:first-child span{color:#8ca2bd;font-size:7px;font-weight:850;letter-spacing:.12em}
+.signupProgress>div:first-child strong{color:#d9e8fa;font-size:9px}
+.signupProgress>small{align-self:end;color:#8ca2bd;font-size:8px}
+.signupProgressTrack{grid-column:1/-1;height:5px;overflow:hidden;border-radius:5px;background:#263952}
+.signupProgressTrack i{display:block;width:67%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#5ce6ed,#6d9fff);box-shadow:0 0 11px #5ce6ed7a;transform-origin:left;animation:signupProgressFill 1.8s .25s ease-out both}
+.signupCompleteBadge{position:absolute;z-index:3;top:5%;right:2%;display:flex;align-items:center;gap:7px;padding:8px 10px;border:1px solid #67e2be45;border-radius:10px;background:#10382feF;color:#8df1c4;box-shadow:0 12px 28px #030b1b7a;font-size:8px;font-weight:900;letter-spacing:.09em;animation:signupBadgeFloat 5.8s -2s ease-in-out 2}
+.signupCompleteBadge span{display:grid;width:17px;height:17px;place-items:center;border-radius:50%;background:#216a52;font-size:10px}
+.signupSpark{position:absolute;z-index:1;color:#79e9ed;text-shadow:0 0 16px #5ce6edaa;animation:signupSparkle 2.8s ease-in-out 2}
+.signupSparkOne{top:31%;left:8%;font-size:18px}
+.signupSparkTwo{right:13%;bottom:25%;color:#86acff;font-size:22px;animation-delay:-1.1s}
+@keyframes signupCardFloat{0%,100%{transform:translateY(0) rotate(-.5deg)}50%{transform:translateY(-8px) rotate(.4deg)}}
+@keyframes signupBadgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes signupProgressFill{from{transform:scaleX(.35);opacity:.55}to{transform:scaleX(1);opacity:1}}
+@keyframes signupSparkle{0%,100%{opacity:.45;transform:scale(.85) rotate(-8deg)}50%{opacity:1;transform:scale(1.12) rotate(8deg)}}
+@keyframes registrationVisualFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes registrationHeadPop{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
+@keyframes registrationProfileDraw{to{stroke-dashoffset:0}}
+@keyframes registrationPlusPop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:scale(1)}}
+@media(min-width:851px){
+ .registrationScreen{height:100vh;min-height:0;overflow:hidden;padding:20px}
+ .registrationScreen .loginShell{height:calc(100vh - 40px);min-height:0}
+ .registrationScreen .loginIntro{min-height:0;padding:32px 40px 24px}
+ .registrationScreen .loginPitch{padding-top:18px}
+ .registrationScreen .registrationBenefits{margin-top:auto;margin-bottom:auto}
+ .registrationScreen .loginIllustration{min-height:0;flex:1;margin:8px -8px 0}
+ .registrationScreen .loginPanel{min-height:0;padding:12px 18px}
+ .registrationScreen .loginCard{width:min(calc(100% - 20px),500px);padding:14px 20px}
+ .registrationScreen .loginCard:before{margin:-14px auto 8px}
+ .registrationScreen .registrationFormVisual{position:relative;top:auto;left:auto;width:36px;height:36px;margin:0 auto 8px;border-radius:12px;transform:none}
+ .registrationScreen .registrationFormVisual>svg{width:28px;height:28px}
+ .registrationScreen .loginHeading{margin-bottom:18px}
+ .registrationScreen .loginHeading h2{font-size:30px}
+ .registrationScreen .loginHeading p{margin-top:5px;font-size:11px}
+ .registrationScreen .registrationForm{gap:13px}
+ .registrationScreen .registrationForm .field label{margin-bottom:5px;font-size:12px}
+ .registrationScreen .registrationForm .field label small{font-size:9px}
+ .registrationScreen .registrationForm .field input{min-height:45px;padding:10px 13px;font-size:13px}
+ .registrationScreen .registrationForm .loginSubmit{min-height:48px;padding:11px 16px}
+ .registrationScreen .signinPrompt{margin-top:6px}
+}
+@media(min-width:851px) and (max-height:720px){
+ .registrationScreen .loginCard:before{margin-bottom:0}
+ .registrationScreen .loginHeading{margin-bottom:12px}
+ .registrationScreen .registrationForm{gap:9px}
+ .registrationScreen .registrationForm .field input{min-height:42px}
+ .registrationScreen .registrationForm .loginSubmit{min-height:46px}
+ .registrationScreen .signinPrompt{margin-top:4px}
+}
+@media(max-width:850px){
+ .registrationScreen{height:100vh;height:100svh;min-height:0;overflow:hidden;padding:16px}
+ .registrationScreen .loginShell{height:100%;min-height:0;grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr)}
+ .registrationScreen .loginIntro{min-height:0;padding:20px 32px 0}
+ .recoveryPage .loginIntro>.loginIllustration{display:grid;flex:none;min-height:104px;margin:7px 0 0}
+ .recoveryPage .recoveryCard{width:min(100%,250px);gap:1px;padding:0}
+ .recoveryPage .recoveryLockVisual{width:82px;height:66px}
+ .recoveryPage .recoveryCard strong{font-size:10px}
+ .recoveryPage .recoveryCard small{font-size:8px}
+ .registrationScreen .loginPitch{margin-top:20px;padding-top:0}
+ .registrationScreen .registrationBenefits{display:none}
+ .registrationScreen .loginIllustration{display:none}
+ .registrationScreen .loginPanel{min-height:0;padding:16px 24px 20px}
+ .registrationScreen .loginCard{height:auto;max-height:100%;overflow:auto;padding:22px 28px}
+ .registrationScreen .registrationFormVisual{position:relative;top:auto;left:auto;width:44px;height:44px;margin:0 auto 10px;border-radius:15px;transform:none}
+ .registrationScreen .registrationFormVisual>svg{width:36px;height:36px}
+ .registrationScreen .loginCard:before{margin:-22px auto 14px}
+ .registrationScreen .loginHeading{margin-bottom:20px}
+ .registrationScreen .loginHeading h2{font-size:30px}
+ .registrationScreen .loginHeading p{margin-top:5px;font-size:11px}
+ .registrationScreen .registrationForm{gap:11px}
+ .registrationScreen .registrationForm .field label{margin-bottom:4px;font-size:11px}
+ .registrationScreen .registrationForm .field label small{font-size:9px}
+ .registrationScreen .registrationForm .field input{min-height:43px;padding:9px 12px;font-size:12px}
+ .registrationScreen .registrationForm .loginSubmit{min-height:46px;padding:10px 16px}
+ .registrationScreen .signinPrompt{margin-top:8px}
+}
+@media(max-width:520px){
+ .registrationScreen{padding:0}
+ .registrationScreen .loginShell{border:0;border-radius:0}
+ .registrationScreen .loginIntro{padding:18px 23px 0}
+ .registrationScreen .loginPitch{margin-top:15px}
+ .registrationScreen .loginEyebrow{margin-bottom:8px;font-size:9px}
+ .registrationScreen .loginPitch h1{max-width:360px;font-size:32px}
+ .registrationScreen .loginPitch p{display:none}
+ .registrationScreen .loginPanel{padding:12px 16px 16px}
+ .registrationScreen .loginCard{padding:15px 21px;border-radius:19px}
+ .registrationScreen .loginCard:before{margin:-15px auto 7px}
+ .registrationScreen .loginHeading{margin-bottom:15px}
+ .registrationScreen .loginHeading h2{font-size:27px}
+ .registrationScreen .registrationForm{gap:11px}
+ .registrationScreen .registrationForm .field label{margin-bottom:2px;font-size:10px}
+ .registrationScreen .registrationForm .field label small{font-size:8px}
+ .registrationScreen .registrationForm .field input{min-height:41px;padding:8px 11px;font-size:11px}
+ .registrationScreen .registrationForm .loginSubmit{min-height:44px;padding:9px 14px}
+ .registrationScreen .signinPrompt{margin-top:4px;font-size:11px}
+}
+@media(max-width:850px) and (max-height:720px){
+ .registrationScreen .loginIntro{padding-top:14px}
+ .registrationScreen .loginPitch{margin-top:10px}
+ .registrationScreen .loginCard{padding-top:15px;padding-bottom:15px}
+ .registrationScreen .loginCard:before{margin-top:-15px;margin-bottom:9px}
+ .registrationScreen .loginHeading{margin-bottom:10px}
+ .registrationScreen .registrationForm{gap:8px}
+ .registrationScreen .registrationForm .field input{min-height:40px}
+ .registrationScreen .signinPrompt{margin-top:4px}
+}

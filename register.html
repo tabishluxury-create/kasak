@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#081322">
+ <title>Create account — HisabAI</title>
+ <link rel="stylesheet" href="hisabai.css">
+ <link rel="stylesheet" href="registration.css">
+</head>
+<body class="registrationPage">
+<section class="loginScreen registrationScreen" aria-labelledby="registrationTitle">
+ <div class="loginShell">
+  <div class="loginPanel">
+   <div class="loginCard registrationCard">
+    <div class="registrationFormVisual" aria-hidden="true">
+     <span class="registrationOrbit registrationOrbitOne"></span>
+     <span class="registrationOrbit registrationOrbitTwo"></span>
+     <svg viewBox="0 0 64 64">
+      <circle class="registrationProfileHalo" cx="32" cy="32" r="25"></circle>
+      <circle class="registrationProfileHead" cx="32" cy="24" r="7"></circle>
+      <path class="registrationProfileBody" d="M18 49c1.6-8.2 6.2-12.3 14-12.3S44.4 40.8 46 49"></path>
+      <circle class="registrationProfilePlus" cx="48" cy="47" r="9"></circle>
+      <path class="registrationProfilePlusMark" d="M48 43v8m-4-4h8"></path>
+     </svg>
+     <i class="registrationVisualSpark registrationVisualSparkOne"></i>
+     <i class="registrationVisualSpark registrationVisualSparkTwo"></i>
+    </div>
+    <div class="loginHeading">
+     <h2 id="registrationTitle">Create your account</h2>
+     <p>Set up your sign-in details. You can add a second step later.</p>
+    </div>
+    <form id="registrationForm" class="loginForm registrationForm">
+     <div class="field"><label for="registerName">Name</label><input id="registerName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Your name" required></div>
+     <div class="field"><label for="registerIdentifier">Email or phone number</label><input id="registerIdentifier" name="identifier" type="text" autocomplete="username" maxlength="160" placeholder="Email or phone number" required></div>
+     <div class="field"><label for="registerPin">Security PIN</label><input id="registerPin" name="pin" type="password" inputmode="numeric" autocomplete="new-password" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="4-digit PIN" title="Enter a 4-digit PIN" required></div>
+     <div class="field"><label for="registerPinConfirm">Confirm PIN</label><input id="registerPinConfirm" name="pinConfirm" type="password" inputmode="numeric" autocomplete="new-password" pattern="[0-9]{4}" minlength="4" maxlength="4" placeholder="Re-enter your PIN" title="Re-enter the same 4-digit PIN" required></div>
+     <div class="field"><label for="registerPassword">Password <small>for optional two-step verification</small></label><input id="registerPassword" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" placeholder="At least 8 characters" required></div>
+     <p id="registrationFeedback" class="registrationFeedback" role="status" aria-live="polite"></p>
+     <button id="registrationSubmit" class="loginSubmit" type="submit">Create account <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="signinPrompt">Already have an account? <a href="login.html">Sign in</a></p>
+   </div>
+  </div>
+  <div class="loginIntro">
+   <div class="loginBackgroundShade" aria-hidden="true"></div>
+   <svg class="loginFinanceGraph" viewBox="0 0 520 260" preserveAspectRatio="none" aria-hidden="true">
+    <path class="loginGraphBaseline" d="M12 222H508M12 172H508M12 122H508M12 72H508"></path>
+    <path class="loginGraphArea" d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34L504 230 16 230Z"></path>
+    <path class="loginGraphLine" d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34"></path>
+    <circle cx="150" cy="158" r="4"></circle><circle cx="278" cy="117" r="4"></circle><circle cx="400" cy="83" r="4"></circle><circle cx="504" cy="34" r="4"></circle>
+   </svg>
+   <a class="loginBrand" href="login.html" aria-label="HisabAI sign in">
+    <span class="logoMark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M13 13v22M35 13v12M13 24h13" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round"/><path d="m24 31 5-6 4 3 6-9m-6 0h6v6" fill="none" stroke="#69f0e0" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span><strong>HisabAI</strong><small>Your voice. Your business.</small></span>
+   </a>
+   <div class="loginPitch">
+    <h1>Set up your business to grow.</h1>
+    <p>Create your HisabAI profile and bring sales, expenses, and customer credit together in one simple workspace.</p>
+   </div>
+   <section class="registrationBenefits" aria-label="What you can manage with HisabAI">
+    <h2>Everything in one clear view</h2>
+    <p class="registrationBenefitsIntro">A simpler way to stay on top of the everyday numbers.</p>
+    <div class="registrationBenefitList">
+     <article class="registrationBenefit">
+      <span class="registrationBenefitIcon" aria-hidden="true">
+       <svg viewBox="0 0 24 24"><path d="M4 18V6m0 12h16M7 15l4-4 3 2 5-6"/><path d="M16 7h3v3"/></svg>
+      </span>
+      <span><strong>Track sales</strong><small>See what your business earns, day by day.</small></span>
+      <span class="registrationBenefitArrow" aria-hidden="true">↗</span>
+     </article>
+     <article class="registrationBenefit">
+      <span class="registrationBenefitIcon" aria-hidden="true">
+       <svg viewBox="0 0 24 24"><path d="M5 5h14v14H5zM8 9h8M8 12h5M8 15h3"/><path d="m15 16 1.5 1.5L20 14"/></svg>
+      </span>
+      <span><strong>Keep expenses organised</strong><small>Know where your money is going.</small></span>
+      <span class="registrationBenefitArrow" aria-hidden="true">↗</span>
+     </article>
+     <article class="registrationBenefit">
+      <span class="registrationBenefitIcon" aria-hidden="true">
+       <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.4-3 2.2-4.5 5.5-4.5 1.3 0 2.3.2 3.1.7"/><circle cx="17" cy="15" r="4"/><path d="M17 13v2l1.4 1"/></svg>
+      </span>
+      <span><strong>Stay on top of customer credit</strong><small>Know what is due and who owes you.</small></span>
+      <span class="registrationBenefitArrow" aria-hidden="true">↗</span>
+     </article>
+    </div>
+    <p class="registrationBenefitsNote"><span aria-hidden="true">✦</span> Start with the essentials. Grow at your own pace.</p>
+   </section>
+   <div class="loginIllustration registrationIllustration" role="img" aria-label="Animated account setup illustration with profile, PIN security, and completed setup status">
+    <div class="illustrationGlow"></div>
+    <div class="illustrationOrbit illustrationOrbitOuter" aria-hidden="true"></div>
+    <div class="illustrationOrbit illustrationOrbitInner" aria-hidden="true"></div>
+    <div class="signupHalo" aria-hidden="true"></div>
+    <div class="signupSetupCard" aria-hidden="true">
+     <div class="signupCardTop"><span class="signupWindowDots"><i></i><i></i><i></i></span><span>ACCOUNT SETUP</span><span class="signupCardMenu">•••</span></div>
+     <div class="signupProfile">
+      <div class="signupAvatar"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14" r="7" fill="currentColor"/><path d="M7 34c1.5-7 6-10.5 13-10.5S31.5 27 33 34" fill="currentColor"/></svg><span>+</span></div>
+      <div class="signupProfileCopy"><strong>Your business profile</strong><span>Ready for your details</span></div>
+      <span class="signupEditIcon" aria-hidden="true">✎</span>
+     </div>
+     <div class="signupFieldPreview"><span>EMAIL OR PHONE</span><i></i></div>
+     <div class="signupFieldPreview"><span>SECURITY PIN</span><i class="signupPinDots">••••</i></div>
+     <div class="signupProgress"><div><span>SETUP PROGRESS</span><strong>Almost there</strong></div><div class="signupProgressTrack"><i></i></div><small>2 of 3 steps</small></div>
+    </div>
+    <div class="signupCompleteBadge" aria-hidden="true"><span>✓</span> PROFILE READY</div>
+    <div class="signupSpark signupSparkOne" aria-hidden="true">✦</div><div class="signupSpark signupSparkTwo" aria-hidden="true">✧</div>
+   </div>
+  </div>
+ </div>
+</section>
+ <script src="auth.js"></script>
+ <script>
+ "use strict";
+ const form=document.getElementById("registrationForm");
+ const passwordField=document.getElementById("registerPassword");
+ const pin=document.getElementById("registerPin");
+ const pinConfirmation=document.getElementById("registerPinConfirm");
+ const feedback=document.getElementById("registrationFeedback");
+ function validatePinMatch(){
+  pinConfirmation.setCustomValidity(pinConfirmation.value&&pinConfirmation.value!==pin.value?"PINs do not match.":"");
+ }
+ pin.addEventListener("input",validatePinMatch);
+ pinConfirmation.addEventListener("input",validatePinMatch);
+ form.addEventListener("submit",async event=>{
+  event.preventDefault();
+  validatePinMatch();
+  if(!form.reportValidity())return;
+  const submit=document.getElementById("registrationSubmit");
+  submit.disabled=true;
+  feedback.className="registrationFeedback";
+  feedback.textContent="";
+  try{
+   const account=await HisabAIAuth.registerAccount({
+    name:document.getElementById("registerName").value,
+    identifier:document.getElementById("registerIdentifier").value,
+    pin:pin.value,
+    password:passwordField.value
+   });
+   form.reset();
+   feedback.classList.add("success");
+   feedback.textContent=`Your account is ready, ${account.name}. Sign in with your email or phone number and PIN.`;
+   setTimeout(()=>{window.location.href="login.html"},1400);
+  }catch(error){
+   console.error("Unable to create the HisabAI account:",error);
+   feedback.classList.add("error");
+   feedback.textContent=error.message||"Could not create your account.";
+  }finally{
+   submit.disabled=false;
+  }
+ });
+ </script>
+</body>
+</html>

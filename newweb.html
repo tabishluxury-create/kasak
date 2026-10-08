@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--
+    PAGE SETUP
+    This file contains the words and page structure (HTML).
+    The colors, spacing, and visual styles live in styles.css.
+    The JavaScript at the bottom makes buttons and menus respond to clicks.
+    To edit a section, search this file for its name, such as "HERO" or "Pricing".
+  -->
+  <meta charset="utf-8">
+  <!-- This line helps the page scale correctly on phones and tablets. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The browser uses this color for some browser controls. -->
+  <meta name="theme-color" content="#0c1715">
+  <!-- Search engines may show this description in search results. -->
+  <meta name="description" content="Meet hisabAI — a calmer, smarter way to manage your business finances.">
+  <!-- This is the title shown in the browser tab. -->
+  <title>hisabAI — Know your numbers. Grow your business.</title>
+  <!-- Connect this page to the separate file that controls its appearance. -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- HEADER: The logo links back to the top; the menu links jump to page sections. -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="hisabAI home"><span
+          class="brand-mark">h</span><span>hisab<span>AI</span></span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation"><a href="#features">Features</a><a
+          href="#how-it-works">How it works</a><a href="#about">About</a><a href="#pricing">Pricing</a><a
+          href="#faq">FAQ</a></nav>
+      <div class="nav-actions"><button class="login-link" data-open-auth="login">Log in</button><button
+          class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+  <!-- MAIN CONTENT: The main page sections appear in order from top to bottom. -->
+  <main>
+    <!-- HERO / TOP LANDING SECTION: Change the opening headline, text, and video here. -->
+    <section class="hero" id="home">
+      <!-- Replace the video filename here if you want to use a different hero video. -->
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata"
+        aria-label="hisabAI background video">
+        <source src="./hisabAI-hero.mp4" type="video/mp4">Your browser does not support the video element.
+      </video>
+      <!-- These empty layers add visual effects on top of the video; they are decorative. -->
+      <div class="hero-glitch-cover" aria-hidden="true"></div>
+      <div class="hero-bottom-strip" aria-hidden="true"></div>
+      <div class="hero-video-overlay" aria-hidden="true"></div>
+      <!-- The short brand message and main buttons are kept together here. -->
+      <div class="wrap hero-grid">
+        <div class="hero-copy-wrap">
+          <span class="eyebrow">Meet hisabAI · Your business, in balance</span>
+          <h1>Know your numbers.<br><em>Grow with confidence.</em></h1>
+          <p class="hero-copy">Less time on bookkeeping. More clarity on cash flow, expenses, and what comes next.
+            hisabAI brings your business finances together in one simple place.</p>
+          <div class="hero-actions"><button class="btn" data-open-auth="signup">Get started for free <span
+                class="arrow">→</span></button><a class="btn btn-light" href="#product-demo">Explore hisabAI</a></div>
+          <div class="hero-note"><span class="avatar-stack"
+              aria-hidden="true"><span>AI</span><span>₹</span><span>✓</span></span><span>Simple bookkeeping · Clear cash
+              flow · Confident decisions</span></div>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="video-frame">
+          <div class="video-caption"><button class="video-control" id="video-control"
+              aria-label="Pause background video">Ⅱ</button></div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#features">Scroll to explore</a>
+    </section>
+    <!-- END HERO SECTION -->
+    <!-- TRUST BAR: These sample business names sit between the hero and the features. -->
+    <div class="trust">
+      <div class="wrap trust-row">
+        <div class="trust-label">A better day-to-day for</div>
+        <div class="trust-logos" aria-label="Businesses we support"><span>indie
+            studio</span><span>goodfolk</span><span>FIELDWORK</span><span>Sunday Supply</span><span>craft & co.</span>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURES: The six cards below describe the main things hisabAI can help with. -->
+    <section id="features"><svg class="finance-graphic" viewBox="0 0 520 260" aria-hidden="true">
+        <!-- This decorative SVG draws the finance-style line in the background. -->
+        <path class="graphic-baseline" d="M12 222H508M12 172H508M12 122H508M12 72H508" />
+        <path d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34" />
+        <circle cx="150" cy="158" r="4" />
+        <circle cx="278" cy="117" r="4" />
+        <circle cx="400" cy="83" r="4" />
+        <circle cx="504" cy="34" r="4" />
+      </svg>
+      <div class="wrap">
+        <div class="features-head">
+          <div><span class="eyebrow">A little less admin</span>
+            <h2 class="section-title">All your money stuff.<br>One happy place.</h2>
+          </div>
+          <p class="section-copy">The busywork gets handled, so you can spend your time doing what you actually started
+            your business to do.</p>
+        </div>
+        <div class="feature-grid">
+          <!-- To change a feature card, edit its title, description, and link together. -->
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">✦</div>
+            <h3>AI bookkeeping</h3>
+            <p>Transactions are sorted into the right categories automatically. Review, approve, and get on with your
+              day.</p><a class="text-link" href="#product-demo">Explore bookkeeping <span class="arrow">→</span></a>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">↗</div>
+            <h3>Cash-flow clarity</h3>
+            <p>See what is coming in, what is going out, and what is safe to spend with simple, live insights.</p><a
+              class="text-link" href="#product-demo">See your numbers <span class="arrow">→</span></a>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">▤</div>
+            <h3>Invoices that get paid</h3>
+            <p>Create polished invoices in moments, send gentle reminders, and keep every payment in view.</p><a
+              class="text-link" href="#product-demo">Make invoicing easy <span class="arrow">→</span></a>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">⌁</div>
+            <h3>Expense tracking</h3>
+            <p>Capture receipts and keep business expenses organized without digging through old emails.</p><a
+              class="text-link" href="#product-demo">Track expenses <span class="arrow">→</span></a>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">◷</div>
+            <h3>Tax-time ready</h3>
+            <p>Keep records tidy throughout the year, so tax time feels like one less thing to worry about.</p><a
+              class="text-link" href="#product-demo">Get organized <span class="arrow">→</span></a>
+          </article>
+          <article class="feature-card">
+            <svg class="feature-art" viewBox="0 0 80 52" aria-hidden="true">
+              <path class="feature-art-base" d="M3 46H77" />
+              <rect x="9" y="28" width="8" height="18" rx="2" />
+              <rect x="25" y="20" width="8" height="26" rx="2" />
+              <rect x="41" y="25" width="8" height="21" rx="2" />
+              <path class="feature-art-line" d="m6 25 16-8 13 5 20-13 19 4" />
+              <circle cx="55" cy="9" r="2.5" />
+              <circle cx="74" cy="13" r="2.5" />
+            </svg>
+            <div class="feature-icon">◎</div>
+            <h3>Human help, when needed</h3>
+            <p>Get friendly support and practical answers from real people who understand small business.</p><a
+              class="text-link" href="#contact">Talk to our team <span class="arrow">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- PRODUCT DEMO: This sample dashboard is interactive, but it does not use real account data. -->
+    <section class="demo-section" id="product-demo"><svg class="finance-graphic" viewBox="0 0 520 260"
+        aria-hidden="true">
+        <!-- Decorative finance graph; it is only for appearance and is not connected to the dashboard. -->
+        <path class="graphic-baseline" d="M12 222H508M12 172H508M12 122H508M12 72H508" />
+        <path d="M16 202C82 194 94 145 150 158S228 185 278 117 354 135 400 83 461 75 504 34" />
+        <circle cx="150" cy="158" r="4" />
+        <circle cx="278" cy="117" r="4" />
+        <circle cx="400" cy="83" r="4" />
+        <circle cx="504" cy="34" r="4" />
+      </svg>
+      <div class="wrap demo-grid">
+        <div class="demo-copy"><span class="eyebrow">Meet your money dashboard</span>
+          <h2 class="section-title">Numbers you can actually use.</h2>
+          <p class="section-copy">A clear view of your business, without the spreadsheet archaeology. Here is a peek at
+            the daily overview.</p>
+          <ul class="check-list">
+            <li><span class="check">✓</span> Income and expenses, all in one view</li>
+            <li><span class="check">✓</span> Spot changes before they become surprises</li>
+            <li><span class="check">✓</span> Add a transaction right from your dashboard</li>
+          </ul><button class="btn" id="demo-transaction-cta">Try the interactive demo <span
+              class="arrow">→</span></button>
+        </div>
+        <!-- The IDs in this dashboard let the script update the sample totals and transactions. -->
+        <div class="dashboard" aria-label="Interactive sample hisabAI dashboard">
+          <div class="dash-head">
+            <div><strong>Good morning, Alex 👋</strong><small>Here’s your business at a glance.</small></div><select
+              class="dash-select" id="range-select" aria-label="Choose dashboard time range">
+              <option value="This month">This month</option>
+              <option value="Last month">Last month</option>
+              <option value="This quarter">This quarter</option>
+            </select>
+          </div>
+          <div class="dash-content">
+            <!-- KPI means "key performance indicator": these are the three sample money totals. -->
+            <div class="dash-kpis">
+              <div class="kpi"><span>Total income</span><strong id="income-total">₹2,48,500</strong><em>↗ 12.8%</em>
+              </div>
+              <div class="kpi"><span>Total expenses</span><strong id="expense-total">₹84,200</strong><em>↘ 4.2%</em>
+              </div>
+              <div class="kpi"><span>Net profit</span><strong id="profit-total">₹1,64,300</strong><em>↗ Looking
+                  healthy</em></div>
+            </div>
+            <!-- This chart is a drawn illustration of cash flow, not a live chart. -->
+            <div class="chart-wrap">
+              <div class="chart-head"><span>Cash flow</span><span>Income &nbsp; Expenses</span></div><svg class="chart"
+                viewBox="0 0 600 126" preserveAspectRatio="none" role="img"
+                aria-label="Income and expenses trend chart">
+                <defs>
+                  <linearGradient id="fill-green" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="0" stop-color="#7cb894" stop-opacity=".25" />
+                    <stop offset="1" stop-color="#7cb894" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M0 94 C45 83 48 71 92 78 S146 91 182 59 S246 68 282 51 S337 70 375 44 S431 52 467 37 S531 52 600 18 L600 126 L0 126Z"
+                  fill="url(#fill-green)" />
+                <path
+                  d="M0 94 C45 83 48 71 92 78 S146 91 182 59 S246 68 282 51 S337 70 375 44 S431 52 467 37 S531 52 600 18"
+                  fill="none" stroke="#2e7b62" stroke-width="3" vector-effect="non-scaling-stroke" />
+                <path
+                  d="M0 110 C52 104 50 94 102 99 S151 110 201 88 S250 97 300 81 S350 97 403 74 S456 83 501 68 S555 78 600 62"
+                  fill="none" stroke="#bdd8c3" stroke-width="2" vector-effect="non-scaling-stroke" />
+              </svg>
+            </div>
+            <!-- Adding an example transaction changes the totals and adds a row to this list. -->
+            <div class="transaction-head"><strong>Recent transactions</strong><button class="add-transaction"
+                id="add-transaction">+ Add transaction</button></div>
+            <div class="transaction-list" id="transaction-list">
+              <div class="transaction">
+                <div class="transaction-name"><span class="transaction-icon">↙</span><span>Client payment<small
+                      style="display:block">Today · Invoice #104</small></span></div><small>Income</small><span
+                  class="amount">+ ₹32,000</span>
+              </div>
+              <div class="transaction">
+                <div class="transaction-name"><span class="transaction-icon">▣</span><span>Workspace rent<small
+                      style="display:block">Yesterday · Rent</small></span></div><small>Expense</small><span
+                  class="amount">− ₹18,500</span>
+              </div>
+              <div class="transaction">
+                <div class="transaction-name"><span class="transaction-icon">✦</span><span>Design project<small
+                      style="display:block">Oct 3 · Invoice #103</small></span></div><small>Income</small><span
+                  class="amount">+ ₹24,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOW IT WORKS: A simple three-step explanation of the product. -->
+    <section id="how-it-works">
+      <video class="steps-background-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1">
+        <source src="./hisabAI-how-it-works.mp4" type="video/mp4">
+      </video>
+      <div class="steps-video-shade" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="steps-head"><span class="eyebrow">Simple from day one</span>
+          <h2 class="section-title">Up and running in<br>three little steps.</h2>
+          <p class="section-copy">No complicated setup or finance degree required. Just a few minutes to get to know
+            your numbers.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step">
+            <div class="step-number">01</div>
+            <h3>Bring it all together</h3>
+            <p>Connect your accounts or start by adding transactions manually. Your data stays in one organized place.
+            </p>
+          </article>
+          <article class="step">
+            <div class="step-number">02</div>
+            <h3>Let hisabAI do the sorting</h3>
+            <p>AI helps categorize your income and expenses. Give everything a quick review and make it your own.</p>
+          </article>
+          <article class="step">
+            <div class="step-number">03</div>
+            <h3>Make your next move</h3>
+            <p>Check your cash flow, understand your performance, and make decisions with a clearer picture.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT: The brand story and a sample customer quote. -->
+    <section class="about-section" id="about">
+      <div class="wrap about-grid">
+        <div><span class="eyebrow">A note from us</span>
+          <h2 class="section-title">You started a business. Not a bookkeeping job.</h2>
+          <p class="section-copy">We built hisabAI for the people behind small businesses: the makers, doers, and
+            big-idea-havers. Money tools should make you feel more in control, not more overwhelmed. So we made one that
+            feels a little more human.</p>
+          <div class="about-note"><strong>More calm.<br>Less chaos.</strong><span>That is the whole idea behind hisabAI
+              — useful tools, made for real life.</span></div>
+        </div>
+        <div class="quote-card">
+          <div class="quote-stars">★★★★★</div>
+          <blockquote>“I finally feel like I understand what is happening with my business money. It gives me my Sunday
+            evenings back.”</blockquote>
+          <div class="quote-person">
+            <div class="quote-avatar">MP</div><span><strong>Maya Patel</strong>Independent designer & hisabAI
+              customer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICING: Edit the plan names and feature lists here. The billing buttons switch the displayed prices. -->
+    <section id="pricing">
+      <div class="wrap">
+        <div class="pricing-head">
+          <div><span class="eyebrow">Straightforward pricing</span>
+            <h2 class="section-title">Room to grow, at<br>your own pace.</h2>
+            <p class="section-copy">Start free. Choose a plan when you are ready. No surprise fees, ever.</p>
+          </div>
+          <!-- data-price-monthly and data-price-yearly hold the values used by the pricing toggle. -->
+          <div class="billing-switch" aria-label="Billing frequency"><button class="active"
+              data-billing="monthly">Monthly</button><button data-billing="yearly">Yearly</button><span
+              class="save-label">Save 20%</span></div>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <div class="plan-label">A good start</div>
+            <h3 class="plan-name">Free</h3>
+            <p class="plan-desc">For getting organized and finding your rhythm.</p>
+            <div class="price"><strong>₹0</strong><span>/ forever</span></div><button class="btn btn-light"
+              data-open-auth="signup">Get started</button>
+            <hr class="plan-divider">
+            <ul class="plan-list">
+              <li>Track up to 30 transactions / month</li>
+              <li>Income and expense overview</li>
+              <li>Basic reports</li>
+              <li>Email support</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <div class="plan-label">Most loved</div>
+            <h3 class="plan-name">Grow</h3>
+            <p class="plan-desc">For businesses ready for a little more clarity.</p>
+            <div class="price"><strong data-price-monthly="₹799" data-price-yearly="₹639">₹799</strong><span>/
+                month</span></div><button class="btn" data-open-auth="signup">Start 14-day free trial</button>
+            <hr class="plan-divider">
+            <ul class="plan-list">
+              <li>Unlimited transactions</li>
+              <li>AI-assisted categorization</li>
+              <li>Cash-flow insights and reports</li>
+              <li>Invoice and receipt tracking</li>
+              <li>Priority support</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <div class="plan-label">More hands-on help</div>
+            <h3 class="plan-name">Partner</h3>
+            <p class="plan-desc">For teams who want a real person in their corner.</p>
+            <div class="price"><strong data-price-monthly="₹1,999" data-price-yearly="₹1,599">₹1,999</strong><span>/
+                month</span></div><button class="btn btn-light" data-open-contact>Talk to our team</button>
+            <hr class="plan-divider">
+            <ul class="plan-list">
+              <li>Everything in Grow</li>
+              <li>Dedicated account specialist</li>
+              <li>Monthly bookkeeping review</li>
+              <li>Team access for up to 5</li>
+              <li>Priority onboarding</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ: Each question button opens or closes its answer when clicked. -->
+    <section class="faq-section" id="faq">
+      <div class="wrap faq-grid">
+        <div><span class="eyebrow">Good questions</span>
+          <h2 class="section-title">A few things you might be wondering.</h2>
+          <p class="section-copy">Still curious? Send us a note and a real human will get back to you.</p><a
+            class="text-link" style="margin-top:20px" href="#contact">Ask us anything <span class="arrow">→</span></a>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item open"><button class="faq-question" aria-expanded="true">What is hisabAI?<span
+                class="faq-plus">+</span></button>
+            <div class="faq-answer">hisabAI is a simple, AI-assisted finance workspace for small businesses. It helps
+              you organize transactions, understand cash flow, and keep your records tidy.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Do I need accounting experience?<span
+                class="faq-plus">+</span></button>
+            <div class="faq-answer">Not at all. hisabAI is designed to make everyday finance easier to understand. Clear
+              labels and helpful summaries make it approachable, even if bookkeeping is new to you.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I try it before paying?<span
+                class="faq-plus">+</span></button>
+            <div class="faq-answer">Yes. The Free plan is available for as long as you need, and the Grow plan includes
+              a 14-day free trial. You can explore the sample dashboard right here on this page.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Does hisabAI connect to my bank?<span
+                class="faq-plus">+</span></button>
+            <div class="faq-answer">Bank connection availability depends on your region and provider. This landing-page
+              demo does not connect to real financial accounts or collect banking credentials.</div>
+          </div>
+          <div class="faq-item"><button class="faq-question" aria-expanded="false">Can I cancel whenever I want?<span
+                class="faq-plus">+</span></button>
+            <div class="faq-answer">Absolutely. Paid plans can be cancelled at any time. Your account stays available
+              through the end of the current billing period.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT / NEWSLETTER: This sample form shows an on-screen message; it does not send email. -->
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-card">
+        <div>
+          <h2>Ready for a little more money calm?</h2>
+          <p>Get the occasional practical tip in your inbox. No noise, just the good stuff.</p>
+        </div>
+        <form class="contact-form" id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email
+            address</label><input id="newsletter-email" type="email" placeholder="you@yourbusiness.com" required><button
+            class="btn" type="submit">Keep me in the loop <span class="arrow">→</span></button></form>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER: Repeat navigation links, account links, and legal placeholders. -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="#home"><span
+              class="brand-mark">h</span><span>hisab<span>AI</span></span></a>
+          <p>Friendly money clarity for people building something of their own.</p>
+          <div class="socials"><a href="#contact" aria-label="Instagram">ig</a><a href="#contact"
+              aria-label="LinkedIn">in</a><a href="#contact" aria-label="X">𝕏</a></div>
+        </div>
+        <div class="footer-col">
+          <h3>Explore</h3><a href="#features">Features</a><a href="#product-demo">Product tour</a><a
+            href="#pricing">Pricing</a><a href="#how-it-works">How it works</a>
+        </div>
+        <div class="footer-col">
+          <h3>Company</h3><a href="#about">About us</a><a href="#contact">Contact</a><a href="#faq">FAQs</a><button
+            data-open-auth="signup">Get started</button>
+        </div>
+        <div class="footer-col">
+          <h3>Your account</h3><button data-open-auth="login">Log in</button><button data-open-auth="signup">Create
+            account</button><a href="#pricing">Plans</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> hisabAI. Made for the doers.</span>
+        <div class="legal-links"><a href="#privacy" data-legal="Privacy">Privacy</a><a href="#terms"
+            data-legal="Terms">Terms</a><a href="#accessibility" data-legal="Accessibility">Accessibility</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- LOGIN / SIGNUP WINDOW: The buttons open this form; it is a demo and has no authentication server. -->
+  <div class="modal-backdrop" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal"><button class="modal-close" data-close-modal aria-label="Close dialog">×</button><a class="brand"
+        href="#home"><span class="brand-mark">h</span><span>hisab<span>AI</span></span></a>
+      <div class="modal-tabs"><button type="button" data-auth-tab="login">Log in</button><button type="button"
+          data-auth-tab="signup">Create account</button></div>
+      <h2 id="modal-title">Welcome back.</h2>
+      <p class="modal-intro" id="modal-intro">Your business is right where you left it.</p>
+      <form id="auth-form">
+        <div class="form-field" id="name-field" hidden><label for="auth-name">Your name</label><input id="auth-name"
+            name="name" autocomplete="name" placeholder="Alex Morgan"></div>
+        <div class="form-field"><label for="auth-email">Email address</label><input id="auth-email" name="email"
+            type="email" autocomplete="email" placeholder="you@yourbusiness.com" required></div>
+        <div class="form-field"><label for="auth-password">Password</label><input id="auth-password" name="password"
+            type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required>
+        </div><button class="btn modal-submit" type="submit" id="auth-submit">Log in</button>
+      </form>
+      <p class="modal-footnote">This is a website preview. Authentication is a demo only; no account is created and no
+        details are sent to a server.</p>
+    </div>
+  </div>
+  <!-- ADD-TRANSACTION WINDOW: Submitting this form updates only the example dashboard on this page. -->
+  <div class="modal-backdrop" id="transaction-modal" role="dialog" aria-modal="true"
+    aria-labelledby="transaction-title">
+    <div class="modal"><button class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+      <h2 id="transaction-title">Add a transaction</h2>
+      <p class="modal-intro">Try it out — your sample dashboard updates instantly.</p>
+      <form id="transaction-form">
+        <div class="form-field"><label for="transaction-description">Description</label><input
+            id="transaction-description" name="description" placeholder="e.g. Client payment" required maxlength="50">
+        </div>
+        <div class="form-field"><label for="transaction-amount">Amount (₹)</label><input id="transaction-amount"
+            name="amount" type="number" min="1" step="1" placeholder="5000" required></div>
+        <div class="form-field"><label for="transaction-type">Type</label><select id="transaction-type" name="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+          </select></div><button class="btn modal-submit" type="submit">Add to dashboard</button>
+      </form>
+    </div>
+  </div>
+  <!-- TOAST: A small temporary message used to confirm actions and explain this demo. -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <!-- PAGE INTERACTIONS: The script below wires buttons, forms, menus, and animations to the page. -->
+  <script>
+    (() => {
+      // Show a temporary message for actions that are demos or need a quick confirmation.
+      const toast = document.getElementById("toast"); let toastTimer;
+      function showToast(message) { toast.textContent = message; toast.classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("show"), 3400) }
+
+      // Open and close the compact navigation menu on smaller screens.
+      const nav = document.getElementById("nav-links"), menuToggle = document.getElementById("menu-toggle");
+      menuToggle.addEventListener("click", () => { const isOpen = nav.classList.toggle("open"); menuToggle.setAttribute("aria-expanded", String(isOpen)); menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu"); menuToggle.textContent = isOpen ? "×" : "☰" });
+      nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => { nav.classList.remove("open"); menuToggle.setAttribute("aria-expanded", "false"); menuToggle.setAttribute("aria-label", "Open menu"); menuToggle.textContent = "☰" }));
+
+      // Keep the login and sign-up window in one place, changing its text and fields for each mode.
+      const authModal = document.getElementById("auth-modal"), transactionModal = document.getElementById("transaction-modal"), authTabs = [...document.querySelectorAll("[data-auth-tab]")], nameField = document.getElementById("name-field"), modalTitle = document.getElementById("modal-title"), modalIntro = document.getElementById("modal-intro"), authSubmit = document.getElementById("auth-submit"), authPassword = document.getElementById("auth-password"); let authMode = "login";
+      function setAuthMode(mode) { authMode = mode; authTabs.forEach(tab => tab.classList.toggle("active", tab.dataset.authTab === mode)); nameField.hidden = mode !== "signup"; document.getElementById("auth-name").required = mode === "signup"; modalTitle.textContent = mode === "signup" ? "Let’s get started." : "Welcome back."; modalIntro.textContent = mode === "signup" ? "Create your free hisabAI preview account." : "Your business is right where you left it."; authSubmit.textContent = mode === "signup" ? "Create my account" : "Log in"; authPassword.autocomplete = mode === "signup" ? "new-password" : "current-password" }
+      function openModal(modal) { modal.classList.add("open"); document.body.classList.add("modal-open"); const firstInput = modal.querySelector("input:not([type=hidden])"); if (firstInput) setTimeout(() => firstInput.focus(), 20) }
+      function closeModals() { document.querySelectorAll(".modal-backdrop.open").forEach(modal => modal.classList.remove("open")); document.body.classList.remove("modal-open") }
+
+      // Connect all login, sign-up, close, outside-click, and Escape-key actions.
+      const appLoginUrl = "./login.html", appRegisterUrl = "./register.html";
+      document.querySelectorAll("[data-open-auth]").forEach(button => button.addEventListener("click", () => { window.location.href = button.dataset.openAuth === "login" ? appLoginUrl : appRegisterUrl })); authTabs.forEach(tab => tab.addEventListener("click", () => { window.location.href = tab.dataset.authTab === "login" ? appLoginUrl : appRegisterUrl })); document.querySelectorAll("[data-close-modal]").forEach(button => button.addEventListener("click", closeModals)); document.querySelectorAll(".modal-backdrop").forEach(backdrop => backdrop.addEventListener("click", event => { if (event.target === backdrop) closeModals() })); document.addEventListener("keydown", event => { if (event.key === "Escape") closeModals() });
+
+      // These forms only display demo messages: no credentials or email addresses are sent to a server.
+      document.getElementById("auth-form").addEventListener("submit", event => { event.preventDefault(); const data = new FormData(event.currentTarget), firstName = (data.get("name") || "").toString().trim().split(/\s+/)[0]; closeModals(); showToast(authMode === "signup" ? `Thanks${firstName ? `, ${firstName}` : ""}! Your hisabAI preview is ready to explore.` : "Welcome back! This is a preview, so no account was signed in."); event.currentTarget.reset() });
+      document.getElementById("newsletter-form").addEventListener("submit", event => { event.preventDefault(); const email = document.getElementById("newsletter-email").value.trim(); showToast(`Thanks for subscribing, ${email}! This preview doesn't send emails.`); event.currentTarget.reset() });
+
+      // Switch the two paid plan prices between the monthly and yearly examples.
+      document.querySelectorAll("[data-billing]").forEach(button => button.addEventListener("click", () => { document.querySelectorAll("[data-billing]").forEach(item => item.classList.toggle("active", item === button)); const priceKey = button.dataset.billing === "yearly" ? "priceYearly" : "priceMonthly"; document.querySelectorAll("[data-price-monthly]").forEach(price => { price.textContent = price.dataset[priceKey] }) }));
+
+      // Expand or collapse an FAQ answer when its question is selected.
+      document.querySelectorAll(".faq-question").forEach(button => button.addEventListener("click", () => { const item = button.closest(".faq-item"), isOpen = item.classList.toggle("open"); button.setAttribute("aria-expanded", String(isOpen)) }));
+
+      // Let visitors pause or resume the hero video; show a message if the browser blocks playback.
+      const video = document.getElementById("hero-video"), videoControl = document.getElementById("video-control");
+      videoControl.addEventListener("click", () => { if (video.paused) { video.dataset.userPaused = "false"; syncBackgroundVideos(); video.play().catch(() => showToast("Video playback could not start. Please try again.")) } else { video.dataset.userPaused = "true"; syncBackgroundVideos() } });
+      video.addEventListener("error", () => showToast("The hero video could not be loaded. Check that hisabAI-hero.mp4 is beside this HTML file."), { once: true });
+
+      // Pause decorative videos when they are offscreen so the browser only decodes what visitors can see.
+      const backgroundVideos = [video, ...document.querySelectorAll(".steps-background-video, .about-background-video")];
+      function syncBackgroundVideos() {
+        const activeVideo = document.hidden ? null : backgroundVideos.find(backgroundVideo =>
+          backgroundVideo.dataset.inView === "true" && backgroundVideo.dataset.userPaused !== "true"
+        );
+        backgroundVideos.forEach(backgroundVideo => {
+          if (backgroundVideo !== activeVideo) {
+            backgroundVideo.pause();
+            return;
+          }
+          backgroundVideo.play().catch(error => {
+            if (backgroundVideo.dataset.playbackErrorReported !== "true") {
+              backgroundVideo.dataset.playbackErrorReported = "true";
+              console.error("Background video playback failed.", error);
+            }
+          });
+        });
+      }
+      backgroundVideos.forEach(backgroundVideo => {
+        backgroundVideo.addEventListener("error", () => console.error("Background video could not be loaded.", backgroundVideo.currentSrc), { once: true });
+      });
+      if ("IntersectionObserver" in window) {
+        const backgroundVideoObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+          entry.target.dataset.inView = String(entry.isIntersecting);
+          syncBackgroundVideos();
+        }), { rootMargin: "0px" });
+        backgroundVideos.forEach(backgroundVideo => backgroundVideoObserver.observe(backgroundVideo));
+      } else {
+        backgroundVideos.forEach(backgroundVideo => {
+          backgroundVideo.dataset.inView = "true";
+        });
+        syncBackgroundVideos();
+      }
+      document.addEventListener("visibilitychange", syncBackgroundVideos);
+      video.addEventListener("play", () => { if (videoControl) { videoControl.textContent = "Ⅱ"; videoControl.setAttribute("aria-label", "Pause background video") } });
+      video.addEventListener("pause", () => { if (videoControl) { videoControl.textContent = "▶"; videoControl.setAttribute("aria-label", "Play background video") } });
+
+      // Keep the transaction data in temporary browser memory so the preview totals can be updated.
+      const transactionList = document.getElementById("transaction-list"); let income = 248500, expenses = 84200;
+      document.getElementById("add-transaction").addEventListener("click", () => openModal(transactionModal));
+      document.getElementById("demo-transaction-cta").addEventListener("click", () => openModal(transactionModal));
+      document.getElementById("transaction-form").addEventListener("submit", event => { event.preventDefault(); const data = new FormData(event.currentTarget), description = data.get("description").toString().trim(), amount = Number(data.get("amount")), type = data.get("type").toString(); if (!description || !Number.isFinite(amount) || amount <= 0) { showToast("Enter a description and a valid amount greater than zero."); return } if (type === "income") income += amount; else expenses += amount; document.getElementById("income-total").textContent = `₹${income.toLocaleString("en-IN")}`; document.getElementById("expense-total").textContent = `₹${expenses.toLocaleString("en-IN")}`; document.getElementById("profit-total").textContent = `₹${(income - expenses).toLocaleString("en-IN")}`; const row = document.createElement("div"); row.className = "transaction"; const name = document.createElement("div"); name.className = "transaction-name"; const icon = document.createElement("span"); icon.className = "transaction-icon"; icon.textContent = type === "income" ? "↙" : "↗"; const nameText = document.createElement("span"); nameText.append(document.createTextNode(description)); const subtext = document.createElement("small"); subtext.style.display = "block"; subtext.textContent = "Just now · Added manually"; nameText.append(subtext); name.append(icon, nameText); const kind = document.createElement("small"); kind.textContent = type === "income" ? "Income" : "Expense"; const value = document.createElement("span"); value.className = "amount"; value.textContent = `${type === "income" ? "+" : "−"} ₹${amount.toLocaleString("en-IN")}`; row.append(name, kind, value); transactionList.prepend(row); closeModals(); showToast("Transaction added. Your dashboard totals are updated."); event.currentTarget.reset() });
+
+      // The selector changes the dashboard's demo period label only; it does not load new account data.
+      document.getElementById("range-select").addEventListener("change", event => showToast(`Dashboard preview range changed to ${event.target.value}.`));
+
+      // The Partner plan directs visitors to the contact form and focuses its email box.
+      document.querySelector("[data-open-contact]").addEventListener("click", () => { document.getElementById("contact").scrollIntoView({ behavior: "smooth" }); setTimeout(() => document.getElementById("newsletter-email").focus(), 450) });
+
+      // Legal links are placeholders until the real privacy, terms, and accessibility pages are published.
+      document.querySelectorAll("[data-legal]").forEach(link => link.addEventListener("click", event => { event.preventDefault(); showToast(`${link.dataset.legal} details can be added when your site is connected to its published policies.`) }));
+
+      // Fade selected content into view as visitors scroll down the page.
+      const revealTargets = document.querySelectorAll("main>section:not(.hero) h2, .feature-card, .step, .price-card, .quote-card");
+      if ("IntersectionObserver" in window) {
+        const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add("is-visible"); revealObserver.unobserve(entry.target) }
+        }), { threshold: .12, rootMargin: "0px 0px -36px 0px" });
+        revealTargets.forEach((element, index) => {
+          element.classList.add("scroll-reveal");
+          const stagger = index % 4;
+          if (stagger) element.classList.add(`scroll-reveal-delay-${stagger}`);
+          revealObserver.observe(element);
+        });
+      }
+
+      // Fill in the current year and make the login form the default mode.
+      document.getElementById("year").textContent = new Date().getFullYear(); setAuthMode("login");
+
+      // On a page reload, return to the hero rather than restoring an old section or URL fragment.
+      window.addEventListener("pageshow", () => {
+        const navigation = performance.getEntriesByType("navigation")[0];
+        if (navigation?.type === "reload") {
+          history.replaceState(null, "", "#home");
+          document.documentElement.style.scrollBehavior = "auto";
+          window.scrollTo(0, 0);
+        }
+      }, { once: true });
+    })();
+  </script>
+</body>
+
+</html>
